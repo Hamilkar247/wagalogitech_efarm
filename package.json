@@ -1,9 +1,9 @@
 {
-  "name": "electron-react",
+  "name": "wagalogitech-efarm",
   "version": "0.1.0",
   "private": true,
   "author": "Hamilkar247",
-  "description": "My fantastic electron app",
+  "description": "Wagalogitech-efarm",
   "homepage": "./",
   "main": "./public/electron.js",
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "build": {
      "appId": "com.electron.myapp",
-     "productName": "My Electron App",
+     "productName": "Wagalogitech-efarm",
      "files": ["build/**/*", "node_modules/**/*"],
      "directories": {
        "buildResources": "public"
