@@ -1,3 +1,8 @@
+import "./inspinia/css/bootstrap.min.css";
+import "./inspinia/font-awesome/css/font-awesome.css";
+import "./inspinia/css/animate.css";
+import "./inspinia/css/style.css";
+
 export { default as Navigation } from "./Navigation";
 export { default as Footer } from "./Footer";
 export { default as Home} from "./Home";
