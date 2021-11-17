@@ -12,25 +12,29 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
   "build": {
-     "appId": "com.electron.myapp",
-     "productName": "Wagalogitech-efarm",
-     "files": ["build/**/*", "node_modules/**/*"],
-     "directories": {
-       "buildResources": "public"
-     },
-     "mac": {
-       "target": "dmg"
-     },
-     "win": {
-       "target": "nsis"
-     },
-     "linux": {
-       "target": "deb"
-     }
+    "appId": "com.electron.myapp",
+    "productName": "Wagalogitech-efarm",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "deb"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,9 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:start": "concurrently -k \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electronmon .\"",
-   "electron:package:mac": "yarn build && electron-builder -m -c.extraMetadata.main=build/electron.js",
-   "electron:package:win": "yarn build && electron-builder -w -c.extraMetadata.main=build/electron.js",
-   "electron:package:linux": "yarn build && electron-builder -l -c.extraMetadata.main=build/electron.js"
+    "electron:package:mac": "yarn build && electron-builder -m -c.extraMetadata.main=build/electron.js",
+    "electron:package:win": "yarn build && electron-builder -w -c.extraMetadata.main=build/electron.js",
+    "electron:package:linux": "yarn build && electron-builder -l -c.extraMetadata.main=build/electron.js"
   },
   "eslintConfig": {
     "extends": [
