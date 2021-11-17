@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Login from './Login'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
@@ -14,6 +13,7 @@ import {
   Blog,
   Posts,
   Post,
+  Login,
 } from "./components";
 
 //ReactDOM.render(
@@ -27,6 +27,7 @@ ReactDOM.render(
   <Router>
     <Navigation />
     <Routes>
+      <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />

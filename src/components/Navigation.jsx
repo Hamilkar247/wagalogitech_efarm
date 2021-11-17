@@ -12,9 +12,14 @@ function Navigation() {
             <div>
               <ul className="navbar-nav m1-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-linnk" to="/">
+                  <NavLink className="nav-link" to="/">
                     Home
                     <span className="sr-only">(current)</span>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/login">
+                    Login
                   </NavLink>
                 </li>
                 <li className="nav-item">
