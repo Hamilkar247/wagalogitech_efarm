@@ -18,6 +18,11 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
+                  <NavLink className="nav-link" to="/ekranglowny">
+                    Ekran główny
+                  </NavLink>
+                </li>
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/login">
                     Login
                   </NavLink>

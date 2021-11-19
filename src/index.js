@@ -14,6 +14,7 @@ import {
   Posts,
   Post,
   Login,
+  Ekranglowny,
 } from "./components";
 
 //ReactDOM.render(
@@ -28,6 +29,7 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/ekranglowny" element={<Ekranglowny />} /> 
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
