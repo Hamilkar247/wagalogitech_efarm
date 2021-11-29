@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import ekranglowny_movies from "./ekranglowny_movies.jsx";
+import ekranglowny_movies from "./ekranglowny_movies";
 //import "../bootstrap"
 //import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "components/ekranglowny.css"
@@ -113,7 +113,7 @@ function getNumberOfPages(rowCount, rowsPerPage) {
     );
   };
 
-const BootyCheckbox = React.forwardRef(({ onClick, ...rest }, ref) => (
+const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
     <div className="form-check">
       <input
         htmlFor="booty-check"
@@ -136,7 +136,7 @@ function Ekranglowny() {
               <DataTable
                 title="Movies"
                 columns={columns}
-                data={movies}
+                data={ekranglowny_movies}
                 defaultSortFieldID={1}
                 pagination
                 paginationComponent={BootyPagination}
