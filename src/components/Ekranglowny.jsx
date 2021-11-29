@@ -1,55 +1,154 @@
 import React from "react";
+import ReactDom from "react-dom";
+import DataTable from "react-data-table-component";
+import ekranglowny_movies from "./ekranglowny_movies.jsx";
+//import "../bootstrap"
+//import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import "components/ekranglowny.css"
+
 //import ReactDOM from 'react-dom';
 //import JqxDataTable from 'jqwidgets-react/react_jqxdatatable.js';
 
+function getNumberOfPages(rowCount, rowsPerPage) {
+    return Math.ceil(rowCount / rowsPerPage);
+  }
+  
+  function toPages(pages) {
+    const results = [];
+  
+    for (let i = 1; i < pages; i++) {
+      results.push(i);
+    }
+  
+    return results;
+  }
+  
+  const columns = [
+    {
+      name: "Title",
+      selector: (row) => row.title,
+      sortable: true
+    },
+    {
+      name: "Directior",
+      selector: (row) => row.director,
+      sortable: true
+    },
+    {
+      name: "Runtime (m)",
+      selector: (row) => row.runtime,
+      sortable: true,
+      right: true
+    }
+  ];
+  
+  // RDT exposes the following internal pagination properties
+  const BootyPagination = ({
+    rowsPerPage,
+    rowCount,
+    onChangePage,
+    onChangeRowsPerPage, // available but not used here
+    currentPage
+  }) => {
+    const handleBackButtonClick = () => {
+      onChangePage(currentPage - 1);
+    };
+  
+    const handleNextButtonClick = () => {
+      onChangePage(currentPage + 1);
+    };
+  
+    const handlePageNumber = (e) => {
+      onChangePage(Number(e.target.value));
+    };
+  
+    const pages = getNumberOfPages(rowCount, rowsPerPage);
+    const pageItems = toPages(pages);
+    const nextDisabled = currentPage === pageItems.length;
+    const previosDisabled = currentPage === 1;
+  
+    return (
+      <nav>
+        <ul className="pagination">
+          <li className="page-item">
+            <button
+              className="page-link"
+              onClick={handleBackButtonClick}
+              disabled={previosDisabled}
+              aria-disabled={previosDisabled}
+              aria-label="previous page"
+            >
+              Previous
+            </button>
+          </li>
+          {pageItems.map((page) => {
+            const className =
+              page === currentPage ? "page-item active" : "page-item";
+  
+            return (
+              <li key={page} className={className}>
+                <button
+                  className="page-link"
+                  onClick={handlePageNumber}
+                  value={page}
+                >
+                  {page}
+                </button>
+              </li>
+            );
+          })}
+          <li className="page-item">
+            <button
+              className="page-link"
+              onClick={handleNextButtonClick}
+              disabled={nextDisabled}
+              aria-disabled={nextDisabled}
+              aria-label="next page"
+            >
+              Next
+            </button>
+          </li>
+        </ul>
+      </nav>
+    );
+  };
+
+const BootyCheckbox = React.forwardRef(({ onClick, ...rest }, ref) => (
+    <div className="form-check">
+      <input
+        htmlFor="booty-check"
+        type="checkbox"
+        className="form-check-input"
+        ref={ref}
+     onClick={onClick}
+      {...rest}
+    />
+    <label className="form-check-label" id="booty-check" />
+  </div>
+));
+
 function Ekranglowny() {
     return (
-      <div className="about">
+      <div className="EkranGlowny">
         <div class="container">
           <div class="row align-items-center my-5">
             <div class="col-lg-7">
-                ahoj
+              <DataTable
+                title="Movies"
+                columns={columns}
+                data={movies}
+                defaultSortFieldID={1}
+                pagination
+                paginationComponent={BootyPagination}
+                selectableRows
+                selectableRowsComponent={BootyCheckBox}
+            />
             </div>
           </div>
         </div>
+        <script src="components/ekranglowny.css"></script>
       </div>  
     ) 
-         
-        ////<body class="gray-bg">
-        ////  <div class="middle-box text-center l"
-        /////</body>
-        ////<div id="ahoj"></div> 
-         //let source = 
-         //{
-         //    localdata: generatedata(85),
-         //    datatype: "array",
-         //    datafields:
-         //    [
-         //        { name: 'firstname', type: 'string' },
-         //        { name: 'lastname', type: 'string' },
-         //        { name: 'productname', type: 'string' },
-         //        { name: 'quantity', type: 'number' },
-         //        { name: 'price', type: 'number' },
-         //        { name: 'total', type: 'number' }
-         //    ]
-         //};
-         //let dataAdapter = new $.jqx.dataAdapter(this.source);
-      
-         //let columns = 
-         //[
-         //    { text: 'Name', dataField: 'firstname', width: 200 },
-         //    { text: 'Last Name', dataField: 'lastname', width: 200 },
-         //    { text: 'Product', editable: false, dataField: 'productname', width: 180 },
-         //    { text: 'Quantity', dataField: 'quantity', width: 80, align: 'right', cellsAlign: 'right' },
-         //    { text: 'Unit Price', dataField: 'price', width: 90, align: 'right', cellsAlign: 'right', cellsFormat: 'c2' },
-         //    { text: 'Total', dataField: 'total', width: 100, align: 'right', cellsAlign: 'right', cellsFormat: 'c2' }
-         //];
-         //return (
-         //    <JqxDataTable 
-         //        source={dataAdapter} sortable={true}
-         //        pageable={true} columns={columns}
-         //     />
-         //)
 }
 
 export default Ekranglowny;
