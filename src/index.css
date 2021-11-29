@@ -1,12 +1,12 @@
 
-/*
-@import "src/library/inspinia/css/bootstrap.min.css";
-@import "src/library/inspinia/font-awesome/css/font-awesome.css";
-@import "src/library/inspinia/css/animate.css";
-@import "src/library/inspinia/css/style.css";
+
+@import "components/inspinia/css/bootstrap.min.css";
+@import "components/inspinia/font-awesome/css/font-awesome.css";
+@import "components/inspinia/css/animate.css";
+@import "components/inspinia/css/style.css";
 
 @media print {#ghostery-tracker-tally {display:none !important}}
-*/
+
 
 body {
   margin: 0;

@@ -25,9 +25,9 @@ function Login() {
              <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 © 2014</small> </p>
           </div>
         </div>
-        <script src="src/library/inspinia/js/jquery-3.1.1.min.js"></script>
-        <script src="src/library/inspinia/js/popper.min.js"></script>
-        <script src="src/library/inspinia/js/bootstrap.js"></script>
+        <script src="components/inspinia/js/jquery-3.1.1.min.js"></script>
+        <script src="components/inspinia/js/popper.min.js"></script>
+        <script src="components/inspinia/js/bootstrap.js"></script>
         <script src="INSPINIA%20|%20Login_pliki/app.js" type="text/javascript"></script>
       </body>
     );
