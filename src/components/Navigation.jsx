@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
     return (
-      /* Navigation.jsx - */
       <div className="navigation">
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <div className="container">
@@ -44,18 +43,15 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item>">
-                  <NavLink className="nav-link" to="/pusta_strona">
+                  <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
                     Nowa seria pomiarowa
                   </NavLink>
                 </li>
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/pusta_strona">
-                     Przegladanie serii pomiarowej
+                    Przegladanie serii pomiarowej
                   </NavLink>
-                </li> */
-                <li className="nav-item>">
-                  
-                </li>
+                </li> 
                 <li className="nav-item>">
                   
                 </li>
@@ -64,7 +60,6 @@ function Navigation() {
           </div>
         </nav>
       </div> 
-      /* Navigation.jsx - koniec */  
     )
 }
 
