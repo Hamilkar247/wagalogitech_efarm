@@ -2,11 +2,12 @@ import React from "react";
 
 function Login() {
     return (
+      /* Login.jsx - początek */
       <body class="gray-bg"> 
         <div class="middle-box text-center loginscreen animated fadeInDown">
           <div>
             <div>
-              <h1 class="logo-name">IN+</h1>
+              <h1 class="logo-name">Waga</h1>
             </div>
             <h3>Witaj w Wagalogitech</h3>
               <p>Zaloguj się</p>
@@ -28,8 +29,9 @@ function Login() {
         <script src="components/inspinia/js/jquery-3.1.1.min.js"></script>
         <script src="components/inspinia/js/popper.min.js"></script>
         <script src="components/inspinia/js/bootstrap.js"></script>
-        <script src="INSPINIA%20|%20Login_pliki/app.js" type="text/javascript"></script>
+        <script src="components/inspinia/js/app.js" type="text/javascript"></script>
       </body>
+      /* Login.jsx - koniec */
     );
 }
 

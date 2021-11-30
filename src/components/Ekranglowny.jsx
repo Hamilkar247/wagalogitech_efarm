@@ -129,25 +129,29 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
 
 function Ekranglowny() {
     return (
-      <div className="EkranGlowny">
-        <div class="container">
-          <div class="row align-items-center my-5">
-            <div class="col-lg-7">
-              <DataTable
-                title="Movies"
-                columns={columns}
-                data={ekranglowny_movies}
-                defaultSortFieldID={1}
-                pagination
-                paginationComponent={BootyPagination}
-                selectableRows
-                selectableRowsComponent={BootyCheckBox}
-            />
+      /* Ekranglowny.jsx - początek */
+      <body class="gray-bg">
+        <div className="EkranGlowny">
+          <div class="container">
+            <div class="row align-items-center my-5">
+              <div class="col-lg-7">
+                <DataTable
+                  title="Movies"
+                  columns={columns}
+                  data={ekranglowny_movies}
+                  defaultSortFieldID={1}
+                  pagination
+                  paginationComponent={BootyPagination}
+                  selectableRows
+                  selectableRowsComponent={BootyCheckBox}
+              />
+              </div>
             </div>
           </div>
-        </div>
-        <script src="components/ekranglowny.css"></script>
-      </div>  
+          <script src="components/ekranglowny.css"></script>
+        </div>  
+      </body>
+      /* Ekranglowny.jsx - koniec */
     ) 
 }
 

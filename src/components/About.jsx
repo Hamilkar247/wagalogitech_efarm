@@ -2,6 +2,7 @@ import React from "react";
 
 function About() {
   return (
+    /* About.jsx - początek */
     <div className="about">
       <div class="container">
         <div class="row align-items-center my-5">
@@ -26,6 +27,7 @@ function About() {
         </div>
       </div>  
     </div>  
+    /* About.jsx - koniec */
   )
 }
 

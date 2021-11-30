@@ -2,6 +2,7 @@ import React from "react";
 
 function Contact() {
     return (
+      /* Contact.jsx - początek */
       <div className="contact">
         <div class="container">
           <div class="row align-items-center my-5">
@@ -24,6 +25,7 @@ function Contact() {
           </div>
         </div>  
       </div>
+      /* Contact.jsx - koniec */
     )
 }
 

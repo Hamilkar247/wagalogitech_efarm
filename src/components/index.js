@@ -13,3 +13,4 @@ export { default as Posts} from "./blog/Posts";
 export { default as Post} from "./blog/Post";
 export { default as Login} from "./Login";
 export { default as Ekranglowny} from "./Ekranglowny";
+export { default as Pusta_Strona} from "./Pusta_Strona";

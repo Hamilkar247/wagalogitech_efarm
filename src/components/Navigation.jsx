@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
     return (
+      /* Navigation.jsx - */
       <div className="navigation">
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <div className="container">
@@ -42,11 +43,28 @@ function Navigation() {
                     Blog
                   </NavLink>
                 </li>
+                <li className="nav-item>">
+                  <NavLink className="nav-link" to="/pusta_strona">
+                    Nowa seria pomiarowa
+                  </NavLink>
+                </li>
+                <li className="nav-item>">
+                  <NavLink className="nav-link" to="/pusta_strona">
+                     Przegladanie serii pomiarowej
+                  </NavLink>
+                </li> */
+                <li className="nav-item>">
+                  
+                </li>
+                <li className="nav-item>">
+                  
+                </li>
               </ul>
             </div>
           </div>
         </nav>
-      </div>   
+      </div> 
+      /* Navigation.jsx - koniec */  
     )
 }
 

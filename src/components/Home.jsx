@@ -2,6 +2,7 @@ import React from "react";
 
 function Home() {
     return (
+      /* Home.jsx - początek */
       <div className="home">
         <div class="container">
           <div class="row align-items-cennter my-5">
@@ -24,6 +25,7 @@ function Home() {
           </div>
         </div>
       </div>  
+      /* Home.jsx - koniec */
     )
 }
 
