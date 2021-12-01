@@ -44,7 +44,7 @@ function Navigation() {
                 </li>
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
-                    Nowa seria pomiarowa
+                    Rozpocznij seria pomiarowa
                   </NavLink>
                 </li>
                 <li className="nav-item>">

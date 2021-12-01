@@ -2,12 +2,12 @@ import React from "react";
 
 function Login() {
     return (
-      /* Login.jsx - początek */
       <body class="gray-bg"> 
+      
         <div class="middle-box text-center loginscreen animated fadeInDown">
           <div>
             <div>
-              <h1 class="logo-name">Waga</h1>
+              <h2 class="logo-name">+Waga</h2>
             </div>
             <h3>Witaj w Wagalogitech</h3>
               <p>Zaloguj się</p>
@@ -19,8 +19,8 @@ function Login() {
                   <input type="password" class="form-control" placeholder="Password" required=""/>
                 </div>
                 <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
-                <a href="#"><small>Forgot password?</small></a>
-                <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                <a href="#"><small>Zapomniałeś hasła?</small></a>
+                <p class="text-muted text-center"><small>Nie masz konta??</small></p>
                 <a class="btn btn-sm btn-white btn-block" href="http://webapplayers.com/inspinia_admin-v2.8/register.html">Create an account</a>
              </form>
              <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 © 2014</small> </p>
@@ -31,7 +31,6 @@ function Login() {
         <script src="components/inspinia/js/bootstrap.js"></script>
         <script src="components/inspinia/js/app.js" type="text/javascript"></script>
       </body>
-      /* Login.jsx - koniec */
     );
 }
 
