@@ -12,6 +12,7 @@ export { default as Blog} from "./blog/Blog";
 export { default as Posts} from "./blog/Posts";
 export { default as Post} from "./blog/Post";
 export { default as Login} from "./Login";
+export { default as Rejestruj} from "./Rejestruj";
 export { default as Ekranglowny} from "./Ekranglowny";
 export { default as Pusta_Strona} from "./Pusta_Strona";
 export { default as RozpocznijSeriePomiarowa} from "./RozpocznijSeriePomiarowa";

@@ -14,6 +14,7 @@ import {
   Posts,
   Post,
   Login,
+  Rejestruj,
   Ekranglowny,
   Pusta_Strona,
   RozpocznijSeriePomiarowa,
@@ -31,6 +32,7 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/rejestruj" element={<Rejestruj />} />
       <Route path="/ekranglowny" element={<Ekranglowny />} /> 
       <Route path="/" element={<Home />} />
       <Route path="/rozpocznij_serie_pomiarowa" element={<RozpocznijSeriePomiarowa />} />

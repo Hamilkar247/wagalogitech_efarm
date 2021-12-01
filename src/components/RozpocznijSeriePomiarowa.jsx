@@ -57,23 +57,21 @@ function RozpocznijSeriePomiarowa() {
                      </div>
                      <div class="ibox-content">
                        <form method="get">
+                         
                          <div class="form-group  row"><label class="col-sm-2 col-form-label">Nazwa serii pomiarowej</label>
-                        <div class="col-sm-10"><input type="text" class="form-control"/></div>
+                           <div class="col-sm-10"><input type="text" class="form-control"/></div>
                          </div>
-                         <div class="form-group  row"><label class="col-sm-2 col-form-label">Normal</label>
-                            <div class="col-sm-10"><input type="text" class="form-control"/></div>
+                         <div class="form-group  row"><label class="col-sm-2 col-form-label">Nazwa serii pomiarowej</label>
+                           <div class="col-sm-10"><input type="text" class="form-control"/></div>
                          </div>
                          <div class="form-group row"><label class="col-sm-2 col-form-label">Help text</label>
                            <div class="col-sm-10"><input type="text" class="form-control"/> <span class="form-text m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
                            </div>
                         </div>
-                        <div class="form-group row"><label class="col-sm-2 col-form-label">Password</label>
-                          <div class="col-sm-10"><input type="password" class="form-control" name="password"/></div>
-                        </div>
                         <div class="form-group row">
                           <div class="col-sm-4 col-sm-offset-2">
-                            <button class="btn btn-white btn-sm" type="submit">Cancel</button>
-                            <button class="btn btn-primary btn-sm" type="submit">Save changes</button>
+                            <button class="btn btn-white btn-sm" type="submit">Anuluj</button>
+                            <button class="btn btn-primary btn-sm" type="submit">Zapisz serie i zacznij pomiary</button>
                           </div>
                         </div>
                     </form>

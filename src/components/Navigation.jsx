@@ -28,6 +28,11 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
+                  <NavLink className="nav-link" to="/rejestruj">
+                    Rejestruj
+                  </NavLink>
+                </li>
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/about">
                     About
                   </NavLink>
@@ -50,7 +55,7 @@ function Navigation() {
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/pusta_strona">
                     Przegladanie serii pomiarowej
-                  </NavLink>
+                       </NavLink>
                 </li> 
                 <li className="nav-item>">
                   
