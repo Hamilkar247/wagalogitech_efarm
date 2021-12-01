@@ -48,6 +48,11 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item>">
+                  <NavLink className="nav-link" to="/okno_serii_pomiarow">
+                    Okno serii pomiarów
+                  </NavLink>
+                </li> 
+                <li className="nav-item>">
                   <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
                     Rozpocznij seria pomiarowa
                   </NavLink>

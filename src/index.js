@@ -19,6 +19,7 @@ import {
   Pusta_Strona,
   RozpocznijSeriePomiarowa,
   OknoPomiaru,
+  OknoSeriiPomiarow,
 } from "./components";
 
 //ReactDOM.render(
@@ -38,6 +39,7 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/rozpocznij_serie_pomiarowa" element={<RozpocznijSeriePomiarowa />} />
       <Route path="/okno_pomiaru" element={<OknoPomiaru />} />
+      <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/pusta_strona" element={<Pusta_Strona />} />
