@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import ekranglowny_movies from "./ekranglowny_movies";
+import oknopomiar_dane from "./oknopomiar_dane";
 //import "../bootstrap"
 //import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "components/ekranglowny.css"
@@ -25,20 +25,24 @@ function getNumberOfPages(rowCount, rowsPerPage) {
   
   const columns = [
     {
-      name: "Title",
-      selector: (row) => row.title,
+      name: "Wartość",
+      selector: (row) => row.wartosc,
       sortable: true
     },
     {
-      name: "Directior",
-      selector: (row) => row.director,
+      name: "Etykieta",
+      selector: (row) => row.etykieta,
       sortable: true
     },
     {
-      name: "Runtime (m)",
-      selector: (row) => row.runtime,
-      sortable: true,
-      right: true
+      name: "Czas",
+      selector: (row) => row.data,
+      sortable: true
+    },
+    {
+      name: "Czy ważny?",
+      selector: (row) => row.wazny,
+      sortable: true
     }
   ];
   
@@ -78,7 +82,7 @@ function getNumberOfPages(rowCount, rowsPerPage) {
               aria-disabled={previosDisabled}
               aria-label="previous page"
             >
-              Previous
+              Poprzedni
             </button>
           </li>
           {pageItems.map((page) => {
@@ -105,7 +109,7 @@ function getNumberOfPages(rowCount, rowsPerPage) {
               aria-disabled={nextDisabled}
               aria-label="next page"
             >
-              Next
+              Następny
             </button>
           </li>
         </ul>
@@ -127,31 +131,32 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
   </div>
 ));
 
-function Ekranglowny() {
+function OknoPomiaru() {
     return (
-      /* Ekranglowny.jsx - początek */
       <body class="gray-bg">
-        <div className="EkranGlowny">
-          <div class="container">
-            <div class="row align-items-center my-5">
-              <div class="col-lg-7">
-                <DataTable
-                  title="Movies"
+        <div class="middle-box text-center loginscreen animated fadeInDown"></div>
+        <div class="container">     
+          <div id="nazwa_serii_pomiarowej">  
+            Nazwa serii pomiarowej.
+          </div>            
+          <div class="row align-items-center my-5">
+            <div class="col-lg-7">
+              <DataTable
+                  title="Dane pomiarowe"
                   columns={columns}
-                  data={ekranglowny_movies}
+                  data={oknopomiar_dane}
                   defaultSortFieldID={1}
                   pagination
                   paginationComponent={BootyPagination}
                   selectableRows
                   selectableRowsComponent={BootyCheckBox}
               />
-              </div>
             </div>
           </div>
           <script src="components/ekranglowny.css"></script>
-        </div>  
+        </div>
       </body>
-    ) 
+    )
 }
 
-export default Ekranglowny;
+export default OknoPomiaru;

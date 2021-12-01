@@ -53,9 +53,9 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item>">
-                  <NavLink className="nav-link" to="/pusta_strona">
-                    Przegladanie serii pomiarowej
-                       </NavLink>
+                  <NavLink className="nav-link" to="/okno_pomiaru">
+                    Okno pomiaru
+                  </NavLink>
                 </li> 
                 <li className="nav-item>">
                   
