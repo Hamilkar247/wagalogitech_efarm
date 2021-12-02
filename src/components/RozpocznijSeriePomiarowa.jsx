@@ -23,7 +23,7 @@ function RozpocznijSeriePomiarowa() {
                   </li>
                   <li class="nav-link">
                     <NavLink className="navbar-link" to="/">
-                    Nowa seria pomiarowa /
+                    Trwanie serii pomiarowej /
                     </NavLink>
                   </li>
                 </ol>

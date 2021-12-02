@@ -18,8 +18,10 @@ import {
   Ekranglowny,
   Pusta_Strona,
   RozpocznijSeriePomiarowa,
+  TrwanieSeriiPomiarowej,
   OknoPomiaru,
   OknoSeriiPomiarow,
+  ListaUzytkownikow,
 } from "./components";
 
 //ReactDOM.render(
@@ -35,11 +37,13 @@ ReactDOM.render(
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/rejestruj" element={<Rejestruj />} />
-      <Route path="/ekranglowny" element={<Ekranglowny />} /> 
+      <Route path="/ekranglowny" element={<Ekranglowny />} />
       <Route path="/" element={<Home />} />
       <Route path="/rozpocznij_serie_pomiarowa" element={<RozpocznijSeriePomiarowa />} />
+      <Route path="/trwanie_serii_pomiarowej" element={<TrwanieSeriiPomiarowej />} />
       <Route path="/okno_pomiaru" element={<OknoPomiaru />} />
       <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
+      <Route path="/lista_uzytkownikow" element={<ListaUzytkownikow />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/pusta_strona" element={<Pusta_Strona />} />

@@ -58,12 +58,19 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item>">
+                  <NavLink className="nav-link" to="/trwanie_serii_pomiarowej">
+                    Trwanie serii pomiarowej
+                  </NavLink>
+                </li>
+                <li className="nav-item>">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru
                   </NavLink>
                 </li> 
                 <li className="nav-item>">
-                  
+                  <NavLink className="nav-link" to="/lista_uzytkownikow">
+                    Lista użytkowników
+                  </NavLink> 
                 </li>
               </ul>
             </div>

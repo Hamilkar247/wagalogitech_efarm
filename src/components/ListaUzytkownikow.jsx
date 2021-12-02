@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import oknopomiar_dane from "./oknopomiar_dane";
-import oknoseriipomiarowych_dane from "./oknoseriipomiarowych_dane";
+import listauzytkownikow_dane from "./listauzytkownikow_dane";
 
 function getNumberOfPages(rowCount, rowsPerPage) {
     return Math.ceil(rowCount / rowsPerPage);
@@ -20,23 +19,33 @@ function getNumberOfPages(rowCount, rowsPerPage) {
   
   const columns = [
     {
-      name: "Nazwa serii pomiarowej",
+      name: "Id",
       selector: (row) => row.nazwa_serii,
       sortable: true
     },
     {
-      name: "Czas rozpoczęcia serii pomiaru",
+      name: "Imię",
       selector: (row) => row.start_serii,
       sortable: true
     },
     {
-      name: "Czas zakończenie serii pomiaru",
+      name: "Nazwisko",
       selector: (row) => row.koniec_serii,
       sortable: true
     },
     {
-      name: "Liczba pomiarów",
+      name: "Login",
       selector: (row) => row.liczba_pomiarow,
+      sortable: true
+    },
+    {
+      name: "Ostatnio zalogowany",
+      selector: (row) => row.ostatnio_zalogowany,
+      sortable: true
+    },
+    {
+      name: "Administrator",
+      selector: (row) => row.administrator,
       sortable: true
     }
   ];
@@ -126,21 +135,21 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
   </div>
 ));
 
-function OknoSeriiPomiarow() {
+function ListaUzytkownikow() {
     return (
       <div className="gray-bg">
-        <div className="middle-box text-center loginscreen animated fadeInDown"></div>
-        <div className="container">     
-          <div id="nazwa_serii_pomiarowej">  
-            Nazwa serii pomiarowej.
-          </div>            
+        <div className="middle-box text-center loginscreen animated faceInDown"></div>
+        <div className="container">
+          <div id="lista_uzytkownikow">
+            Lista Użytkowników
+          </div>
           <div className="row align-items-center my-5">
             <div className="col-lg-11 col-lg-9 col-lg-7 col-lg-5">
               <DataTable
-                  title="Dane pomiarowe"
+                  title="Uzytkownicy"
                   columns={columns}
-                  data={oknoseriipomiarowych_dane}
-                  defaultSortFieldID={1}
+                  data={listauzytkownikow_dane}
+                  defaultSortFieldId={1}
                   pagination
                   paginationComponent={BootyPagination}
                   selectableRows
@@ -154,4 +163,4 @@ function OknoSeriiPomiarow() {
     )
 }
 
-export default OknoSeriiPomiarow;
+export default ListaUzytkownikow;

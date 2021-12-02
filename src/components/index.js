@@ -18,3 +18,5 @@ export { default as Pusta_Strona} from "./Pusta_Strona";
 export { default as RozpocznijSeriePomiarowa} from "./RozpocznijSeriePomiarowa";
 export { default as OknoPomiaru} from "./OknoPomiaru";
 export { default as OknoSeriiPomiarow} from "./OknoSeriiPomiarow";
+export { default as ListaUzytkownikow} from "./ListaUzytkownikow";
+export { default as TrwanieSeriiPomiarowej} from "./TrwanieSeriiPomiarowej";

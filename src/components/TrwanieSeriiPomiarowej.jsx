@@ -20,23 +20,23 @@ function getNumberOfPages(rowCount, rowsPerPage) {
   
   const columns = [
     {
-      name: "Nazwa serii pomiarowej",
-      selector: (row) => row.nazwa_serii,
+      name: "Wartość",
+      selector: (row) => row.wartosc,
       sortable: true
     },
     {
-      name: "Czas rozpoczęcia serii pomiaru",
-      selector: (row) => row.start_serii,
+      name: "Etykieta",
+      selector: (row) => row.etykieta,
       sortable: true
     },
     {
-      name: "Czas zakończenie serii pomiaru",
-      selector: (row) => row.koniec_serii,
+      name: "Data",
+      selector: (row) => row.data,
       sortable: true
     },
     {
-      name: "Liczba pomiarów",
-      selector: (row) => row.liczba_pomiarow,
+      name: "Ważny",
+      selector: (row) => row.wazny,
       sortable: true
     }
   ];
@@ -126,18 +126,19 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
   </div>
 ));
 
-function OknoSeriiPomiarow() {
+function TrwanieSeriiPomiarowej() {
     return (
       <div className="gray-bg">
         <div className="middle-box text-center loginscreen animated fadeInDown"></div>
         <div className="container">     
-          <div id="nazwa_serii_pomiarowej">  
-            Nazwa serii pomiarowej.
+          <div id="trwa_seria_pomiarowa">  
+            Trwa seria pomiarowa. MIEJSCE NA NAZWE SERII POMIAROWEJ
           </div>            
           <div className="row align-items-center my-5">
             <div className="col-lg-11 col-lg-9 col-lg-7 col-lg-5">
+              <div> Zakończ serie pomiarową _ Zatrzymaj serie pomiarową _ Dodaj pomiar ręcznie _ Exportuj pomiary </div>
               <DataTable
-                  title="Dane pomiarowe"
+                  title="Zmierzone wartości"
                   columns={columns}
                   data={oknoseriipomiarowych_dane}
                   defaultSortFieldID={1}
@@ -154,4 +155,4 @@ function OknoSeriiPomiarow() {
     )
 }
 
-export default OknoSeriiPomiarow;
+export default TrwanieSeriiPomiarowej;
