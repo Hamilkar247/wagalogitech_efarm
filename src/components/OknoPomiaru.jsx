@@ -133,14 +133,14 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
 
 function OknoPomiaru() {
     return (
-      <body class="gray-bg">
+      <div className="gray-bg">
         <div class="middle-box text-center loginscreen animated fadeInDown"></div>
         <div class="container">     
           <div id="nazwa_serii_pomiarowej">  
             Nazwa serii pomiarowej.
           </div>            
           <div class="row align-items-center my-5">
-            <div class="col-lg-7">
+            <div class="col-lg-11 col-lg-7 col-lg-5 col-lg-3">
               <DataTable
                   title="Dane pomiarowe"
                   columns={columns}
@@ -155,7 +155,7 @@ function OknoPomiaru() {
           </div>
           <script src="components/ekranglowny.css"></script>
         </div>
-      </body>
+      </div>
     )
 }
 
