@@ -47,22 +47,22 @@ function Navigation() {
                     Blog
                   </NavLink>
                 </li>
-                <li className="nav-item>">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_serii_pomiarow">
                     Okno serii pomiarów
                   </NavLink>
                 </li> 
-                <li className="nav-item>">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
                     Rozpocznij seria pomiarowa
                   </NavLink>
                 </li>
-                <li className="nav-item>">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/trwanie_serii_pomiarowej">
                     Trwanie serii pomiarowej
                   </NavLink>
                 </li>
-                <li className="nav-item>">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru
                   </NavLink>
@@ -71,6 +71,11 @@ function Navigation() {
                   <NavLink className="nav-link" to="/lista_uzytkownikow">
                     Lista użytkowników
                   </NavLink> 
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/okno_sesji_uzytkownika">
+                    Okno sesji użytkownika
+                  </NavLink>
                 </li>
               </ul>
             </div>

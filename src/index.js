@@ -21,6 +21,7 @@ import {
   TrwanieSeriiPomiarowej,
   OknoPomiaru,
   OknoSeriiPomiarow,
+  OknoSesjiUzytkownika,
   ListaUzytkownikow,
 } from "./components";
 
@@ -43,6 +44,7 @@ ReactDOM.render(
       <Route path="/trwanie_serii_pomiarowej" element={<TrwanieSeriiPomiarowej />} />
       <Route path="/okno_pomiaru" element={<OknoPomiaru />} />
       <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
+      <Route path="/okno_sesji_uzytkownika" element={<OknoSesjiUzytkownika />} />
       <Route path="/lista_uzytkownikow" element={<ListaUzytkownikow />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />

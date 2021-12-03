@@ -6,7 +6,7 @@ function Rejestruj() {
         <div className="middle-box text-center loginscreen animated fadeInDown">
           <div>
             <div>
-              <h1 className="logo-name">IN+</h1>
+              <h2 className="logo-name">Waga+</h2>
             </div>
             <h3>Zarejestruj w Waga+</h3>
             <p>Stwórz konto.</p>

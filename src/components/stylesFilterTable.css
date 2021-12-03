@@ -1,0 +1,33 @@
+.OknoSesjiUzytkownika {
+    font-family: sans-serif;
+    /* text-align: center; */
+}
+
+.rdt_Table {
+  margin-bottom: 1rem;
+}
+.rdt_TableRow {
+  background-color: grey;
+}
+.rdt_TableCol {
+  color: black;
+  font-weight: bolder;
+}
+.rdt_TableCol_Sortable {
+}
+.rdt_TableCell {
+}
+.rdt_TableHeader {
+  background-color: transparent;
+}
+.rdt_TableFooter {
+}
+.rdt_TableHead {
+}
+.rdt_TableHeadRow {
+  background-color: green;
+}
+.rdt_TableBody {
+}
+.rdt_ExpanderRow {
+}

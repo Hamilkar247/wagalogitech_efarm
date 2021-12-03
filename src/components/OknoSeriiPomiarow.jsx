@@ -129,7 +129,7 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
 function OknoSeriiPomiarow() {
     return (
       <div className="gray-bg">
-        <div className="middle-box text-center loginscreen animated fadeInDown"></div>
+        <div className="middle-box text-center animated fadeInDown"></div>
         <div className="container">     
           <div id="nazwa_serii_pomiarowej">  
             Nazwa serii pomiarowej.

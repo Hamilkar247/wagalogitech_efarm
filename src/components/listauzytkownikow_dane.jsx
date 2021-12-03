@@ -1,86 +1,47 @@
 export default [
     {
         id: 1,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
+        imie: "Hamilkar",
+        nazwisko: "Barkas",
+        login: "hami",
+        haslo: "barkas",
+        administrator: "true",
+        ostatnio_zalogowany: "01.01.1970"
     },
     {
         id: 2,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
+        imie: "Hannibal",
+        nazwisko: "Barkas",
+        login: "hanni",
+        haslo: "barkas",
+        administrator: "true",
+        ostatnio_zalogowany: "01.01.1970"
     },
     {
         id: 3,
-        wartosc: "231",
-        etykieta: "a niech",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
+        imie: "Hannon",
+        nazwisko: "Eugoryda",
+        login: "hanno",
+        haslo: "barkas",
+        administrator: "true",
+        ostatnio_zalogowany: "01.01.1970"
     },
     {
         id: 4,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
+        imie: "Magon",
+        nazwisko: "Barkas",
+        login: "magon",
+        haslo: "barkas",
+        administrator: "true",
+        ostatnio_zalogowany: "01.01.1970"
     },
     {
         id: 5,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 6,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 7,
-        wartosc: "231",
-        etykieta: "a niech",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 8,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 9,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 10,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 11,
-        wartosc: "231",
-        etykieta: "a niech",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 12,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
+        imie: "Hazdrubal",
+        nazwisko: "Barkas",
+        login: "hazdru",
+        haslo: "barkas",
+        administrator: "true",
+        ostatnio_zalogowany: "01.01.1970"
     },
 ];
