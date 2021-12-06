@@ -12,17 +12,6 @@ function Navigation() {
             <div>
               <ul className="navbar-nav m1-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
-                    Home
-                    <span className="sr-only">(current)</span>
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/ekranglowny">
-                    Ekran główny
-                  </NavLink>
-                </li>
-                <li className="nav-item">
                   <NavLink className="nav-link" to="/login">
                     Login
                   </NavLink>
@@ -33,20 +22,25 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
+                  <NavLink className="nav-link" to="/ekranglowny">
+                    Ekran główny
+                  </NavLink>
+                </li>
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/about">
                     About
                   </NavLink>
-                </li>
-                <li className="nav-item">
+                </li> */}
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/contact">
                     Contact
                   </NavLink>
-                </li>
-                <li className="nav-item">
+                </li> */}
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/blog">
                     Blog
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_serii_pomiarow">
                     Okno serii pomiarów
@@ -54,7 +48,7 @@ function Navigation() {
                 </li> 
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
-                    Rozpocznij seria pomiarowa
+                    Rozpocznij serie pomiarowa
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -62,11 +56,11 @@ function Navigation() {
                     Trwanie serii pomiarowej
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru
                   </NavLink>
-                </li> 
+                </li>  */}
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/lista_uzytkownikow">
                     Lista użytkowników

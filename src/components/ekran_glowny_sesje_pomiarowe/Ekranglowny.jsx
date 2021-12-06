@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import ekranglowny_movies from "./ekranglowny_movies";
+import seriipomiarowych_dane from "./seriipomiarowe_dane";
+import { Link } from 'react-router-dom';
 //import "../bootstrap"
 //import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "components/ekranglowny.css"
@@ -22,23 +23,27 @@ function getNumberOfPages(rowCount, rowsPerPage) {
   
     return results;
   }
-  
+
   const columns = [
     {
-      name: "Title",
-      selector: (row) => row.title,
+      name: "Nazwa serii pomiarowej",
+      selector: (row) => row.nazwa_serii,
       sortable: true
     },
     {
-      name: "Directior",
-      selector: (row) => row.director,
+      name: "Czas rozpoczęcia serii pomiaru",
+      selector: (row) => row.start_serii,
       sortable: true
     },
     {
-      name: "Runtime (m)",
-      selector: (row) => row.runtime,
-      sortable: true,
-      right: true
+      name: "Czas zakończenie serii pomiaru",
+      selector: (row) => row.koniec_serii,
+      sortable: true
+    },
+    {
+      name: "Liczba pomiarów",
+      selector: (row) => row.liczba_pomiarow,
+      sortable: true
     }
   ];
   
@@ -134,11 +139,14 @@ function Ekranglowny() {
         <div className="EkranGlowny">
           <div className="container">
             <div className="row align-items-center my-5">
-              <div className="col-lg-11 col-lg-7 col-lg-5 col-lg-3">
+              <Link to="/rozpocznij_serie_pomiarowa">
+                <button type="submit" className="btn btn-primary block m-b">Nowa seria pomiarowa</button>
+              </Link>
+              <div className="col-lg-15 col-lg-13 col-lg-11 col-lg-7 col-lg-5 col-lg-3">
                 <DataTable
-                  title="Movies"
+                  title="Serie Pomiarowe"
                   columns={columns}
-                  data={ekranglowny_movies}
+                  data={seriipomiarowych_dane}
                   defaultSortFieldID={1}
                   pagination
                   paginationComponent={BootyPagination}
@@ -149,6 +157,10 @@ function Ekranglowny() {
             </div>
           </div>
           <script src="components/ekranglowny.css"></script>
+          <script src="components/inspinia/js/jquery-3.1.1.min.js"></script>
+          <script src="components/inspinia/js/popper.min.js"></script>
+          <script src="components/inspinia/js/bootstrap.js"></script>
+          <script src="components/inspinia/js/app.js" type="text/javascript"></script>
         </div>  
       </div>
     ) 

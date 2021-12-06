@@ -1,10 +1,10 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function RozpocznijSeriePomiarowa() {
     return (
-      <body class="pace-done">
+      <div class="pace-done">
         <div id="wrapper">
           <div class="gray-bg">
             <div class="row wrapper border-bottom white-bg page-heading">
@@ -36,7 +36,7 @@ function RozpocznijSeriePomiarowa() {
                  <div class="col-lg-12">
                    <div class="ibox ">
                      <div class="ibox-title">
-                     <h5>Rozpocznij serie pomiarową <small> Dane serii pomiarowej </small></h5>
+                       <h5>Rozpocznij serie pomiarową <small> Dane serii pomiarowej </small></h5>
                        <div class="ibox-tools">
                          <a class="collapse-link">
                            <i class="fa fa-chevron-up"></i>
@@ -61,17 +61,18 @@ function RozpocznijSeriePomiarowa() {
                          <div class="form-group  row"><label class="col-sm-2 col-form-label">Nazwa serii pomiarowej</label>
                            <div class="col-sm-10"><input type="text" class="form-control"/></div>
                          </div>
-                         <div class="form-group  row"><label class="col-sm-2 col-form-label">Nazwa serii pomiarowej</label>
-                           <div class="col-sm-10"><input type="text" class="form-control"/></div>
-                         </div>
-                         <div class="form-group row"><label class="col-sm-2 col-form-label">Help text</label>
-                           <div class="col-sm-10"><input type="text" class="form-control"/> <span class="form-text m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                         <div class="form-group row"><label class="col-sm-2 col-form-label">Opis badanej substancji</label>
+                           <div class="col-sm-10"><input type="text" class="form-control"/> <span class="form-text m-b-none">Opis powinien zawierać dane na temat omawianego przedmiotu.</span>
                            </div>
                         </div>
                         <div class="form-group row">
                           <div class="col-sm-4 col-sm-offset-2">
-                            <button class="btn btn-white btn-sm" type="submit">Anuluj</button>
-                            <button class="btn btn-primary btn-sm" type="submit">Zapisz serie i zacznij pomiary</button>
+                            <Link to="/">
+                              <button class="btn btn-white btn-sm" type="submit">Anuluj</button>   
+                            </Link>
+                            <Link to="/trwanie_serii_pomiarowej">
+                              <button class="btn btn-primary btn-sm" type="submit">Zapisz serie i zacznij pomiary</button>
+                            </Link>
                           </div>
                         </div>
                     </form>
@@ -92,7 +93,7 @@ function RozpocznijSeriePomiarowa() {
         <script src="/components/inspinia/inspinia.js"></script>
         <script src="/components/inspinia/pace.js"></script>
         <script src="/components/inspinia/icheck.js"></script>
-    </body>
+    </div>
     )
 }
 

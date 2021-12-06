@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import DataTable from "react-data-table-component";
-import movies from "./movies";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
+import seriipomiarowych_dane from "./seriipomiarowe_dane";
 
 function getNumberOfPages(rowCount, rowsPerPage) {
   return Math.ceil(rowCount / rowsPerPage);
@@ -21,20 +21,24 @@ function toPages(pages) {
 
 const columns = [
   {
-    name: "Title",
-    selector: (row) => row.title,
+    name: "Nazwa serii pomiarowej",
+    selector: (row) => row.nazwa_serii,
     sortable: true
   },
   {
-    name: "Directior",
-    selector: (row) => row.director,
+    name: "Czas rozpoczęcia serii pomiaru",
+    selector: (row) => row.start_serii,
     sortable: true
   },
   {
-    name: "Runtime (m)",
-    selector: (row) => row.runtime,
-    sortable: true,
-    right: true
+    name: "Czas zakończenie serii pomiaru",
+    selector: (row) => row.koniec_serii,
+    sortable: true
+  },
+  {
+    name: "Liczba pomiarów",
+    selector: (row) => row.liczba_pomiarow,
+    sortable: true
   }
 ];
 
@@ -126,11 +130,12 @@ const BootyCheckbox = React.forwardRef(({ onClick, ...rest }, ref) => (
 function App() {
   return (
     <div className="App">
-      <div className="card">
+      <button type="submit" className="btn btn-primary block full-width m-b">Rozpocznij nową serie pomiarową</button>
+      <div className="serie_pomiarowe">
         <DataTable
-          title="Movies"
+          title="Serie pomiarowe"
           columns={columns}
-          data={movies}
+          data={seriipomiarowych_dane}
           defaultSortFieldID={1}
           pagination
           paginationComponent={BootyPagination}
