@@ -137,7 +137,7 @@ function Ekranglowny() {
       /* Ekranglowny.jsx - początek */
       <div class="gray-bg">
         <div className="EkranGlowny">
-          <div className="container">
+          <div className="wrapper wrapper-content animated fadeInRight">
             <div className="row align-items-center my-5">
               <Link to="/rozpocznij_serie_pomiarowa">
                 <button type="submit" className="btn btn-primary block m-b">Nowa seria pomiarowa</button>

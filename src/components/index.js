@@ -19,6 +19,6 @@ export { default as RozpocznijSeriePomiarowa} from "./nowa_seria_pomiarowa/Rozpo
 export { default as TrwanieSeriiPomiarowej} from "./nowa_seria_pomiarowa/TrwanieSeriiPomiarowej";
 export { default as OknoPomiaru} from "./OknoPomiaru";
 export { default as OknoSeriiPomiarow} from "./OknoSeriiPomiarow";
-export { default as ListaUzytkownikow} from "./ListaUzytkownikow";
-
-export { default as OknoSesjiUzytkownika} from "./OknoSesjiUzytkownika";
+export { default as ListaUzytkownikow} from "./lista_uzytkownikow/ListaUzytkownikow";
+ 
+export { default as OknoSesjiUzytkownika} from "./okna_sesji_uzytkownika/OknoSesjiUzytkownika";

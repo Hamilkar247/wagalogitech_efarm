@@ -1,66 +1,9 @@
 import React, { useEffect, useState} from "react";
 import ReactDOM from "react-dom";
-import data from "./data.jsx";
-import Table from "./DataTable.jsx";
+import data from "../data.jsx";
+import Table from "../datatable_react_wagalogitech.jsx";
 
 import "./stylesFilterTable.css"
-
-// const columns = [
-//     {
-//         name: 'Title',
-//         selector: row => row.title,
-//         filterable: true,
-//     },
-//     {
-//         name: 'Year',
-//         selector: row => row.year,
-//         filterable: true,
-//     },
-// ];
-
-// const data = [
-//     {
-//         id: 1,
-//         title: 'Beetlejuice',
-//         year: '1988',
-//     },
-//     {
-//         id: 2,
-//         title: 'Ghostbusters',
-//         year: '1984',
-//     },
-//     {
-//       id: 1,
-//       title: 'Beetlejuice',
-//       year: '1988',
-//   },
-//   {
-//       id: 2,
-//       title: 'Ghostbusters',
-//       year: '1984',
-//   },
-//   {
-//     id: 1,
-//     title: 'Beetlejuice',
-//     year: '1988',
-//   },
-//   {
-//     id: 2,
-//     title: 'Ghostbusters',
-//     year: '1984',
-//   },
-//   {
-//     id: 1,
-//     title: 'Beetlejuice',
-//     year: '1988',
-//   },
-//   {
-//     id: 2,
-//     title: 'Ghostbusters',
-//     year: '1984',
-//   }
-// ]
-
 
 const users = [
   {

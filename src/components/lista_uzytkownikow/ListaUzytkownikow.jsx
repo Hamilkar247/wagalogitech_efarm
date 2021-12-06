@@ -137,23 +137,31 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
 
 function ListaUzytkownikow() {
     return (
-      <div className="gray-bg"> 
-        <div className="container">
-          <div id="lista_uzytkownikow">
-            Lista Użytkowników
-          </div>
-          <div className="">
-            <div className="col-lg-11 col-lg-9 col-lg-7 col-lg-5">
-              <DataTable
-                  title="Uzytkownicy"
-                  columns={columns}
-                  data={listauzytkownikow_dane}
-                  defaultSortFieldId={1}
-                  pagination
-                  paginationComponent={BootyPagination}
-                  selectableRows
-                  selectableRowsComponent={BootyCheckBox}
-              />
+      <div className="pace-done">
+        <div id="wrapper">
+          <div className="gray-bg"> 
+            <div className="row wrapper border-bottom white-bg page-heading">
+              <div className="ibox">
+                <div class="ibox-title">
+                  <div id="col-lg-10">
+                    <h2>Lista Użytkowników</h2>
+                  </div>
+                  <div className="wrapper wrapper-content animated fadeInRight">
+                    <div className="col-lg-17 col-lg-14 col-lg-11 col-lg-9 col-lg-7 col-lg-5">
+                      <DataTable
+                          title="Uzytkownicy"
+                          columns={columns}
+                          data={listauzytkownikow_dane}
+                          defaultSortFieldId={1}
+                          pagination
+                          paginationComponent={BootyPagination}
+                          selectableRows
+                          selectableRowsComponent={BootyCheckBox}
+                      />
+                    </div>
+                  </div>                  
+                </div>
+              </div>
             </div>
           </div>
         </div>

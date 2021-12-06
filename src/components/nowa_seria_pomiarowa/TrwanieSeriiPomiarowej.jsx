@@ -202,42 +202,42 @@ const dane = [
 
 function TrwanieSeriiPomiarowej() {
     return (
-      <div class="pace-done">
+      <div className="pace-done">
         <div id="wrapper">
           <div className="gray-bg">
             <div className="row wrapper border-bottom white-bg page-heading">     
-              <div className="col-lg-10"> 
+              <div className="col-lg-10">
                 <h2>Trwająca seria pomiarową <small> Dane serii pomiarowej </small></h2>
-                 <div class="ibox-tools">
-                   <a class="collapse-link">
-                     <i class="fa fa-chevron-up"></i>
+                 <div clasName="ibox-tools">
+                   <a className="collapse-link">
+                     <i className="fa fa-chevron-up"></i>
                    </a>
-                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                     <i class="fa fa-wrench"></i>
+                   <a className="dropdown-toggle" data-toggle="dropdown" href="#">
+                     <i className="fa fa-wrench"></i>
                    </a>
-                   <ul class="dropdown-menu dropdown-user">
-                     <li><a href="#" class="dropdown-item">Config option 1</a>
+                   <ul className="dropdown-menu dropdown-user">
+                     <li><a href="#" className="dropdown-item">Config option 1</a>
                      </li>
-                     <li><a href="#" class="dropdown-item">Config option 2</a>
+                     <li><a href="#" className="dropdown-item">Config option 2</a>
                      </li>
                    </ul>
-                   <a class="close-link">
-                     <i class="fa fa-times"></i>
+                   <a className="close-link">
+                     <i className="fa fa-times"></i>
                    </a>
                  </div>
                 Trwa seria pomiarowa. MIEJSCE NA NAZWE SERII POMIAROWEJ
-                <ol class="breadcrumb">
-                  <li class="nav-link">
+                <ol className="breadcrumb">
+                  <li className="nav-link">
                     <NavLink className="navbar-link" to="/">
                     Home /
                     </NavLink>
                   </li>
-                  <li class="nav-link">
+                  <li className="nav-link">
                     <NavLink className="navbar-link" to="/">
                     Formularze /
                     </NavLink>
                   </li>
-                  <li class="nav-link">
+                  <li className="nav-link">
                     <NavLink className="navbar-link" to="/">
                     Trwanie serii pomiarowej /
                     </NavLink>
