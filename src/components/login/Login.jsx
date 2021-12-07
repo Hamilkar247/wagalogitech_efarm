@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Login() {
     return (
@@ -17,7 +18,9 @@ function Login() {
                 <div className="form-group">
                   <input type="password" className="form-control" placeholder="Password" required=""/>
                 </div>
+                <Link to="/ekran_glowny">
                 <button type="submit" className="btn btn-primary block full-width m-b">Login</button>
+                </Link>
                 <a href="#"><small>Zapomniałeś hasła?</small></a>
                 <p className="text-muted text-center"><small>Nie masz konta??</small></p>
                 <a className="btn btn-sm btn-white btn-block" href="http://webapplayers.com/inspinia_admin-v2.8/register.html">Stwórz konto</a>

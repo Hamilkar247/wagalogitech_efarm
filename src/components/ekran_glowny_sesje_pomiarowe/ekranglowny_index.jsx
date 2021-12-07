@@ -129,19 +129,36 @@ const BootyCheckbox = React.forwardRef(({ onClick, ...rest }, ref) => (
 
 function App() {
   return (
-    <div className="App">
-      <button type="submit" className="btn btn-primary block full-width m-b">Rozpocznij nową serie pomiarową</button>
-      <div className="serie_pomiarowe">
-        <DataTable
-          title="Serie pomiarowe"
-          columns={columns}
-          data={seriipomiarowych_dane}
-          defaultSortFieldID={1}
-          pagination
-          paginationComponent={BootyPagination}
-          selectableRows
-          selectableRowsComponent={BootyCheckbox}
-        />
+    <div className="pace-done">
+      <div id="wrapper">
+        <div className="gray-bg">
+          <div className="row wrapper border-bottom white-bg page-heading">
+            <div className="ibox">
+              <div className="ibox-title">
+                <div id="col-lg-10">
+                  <h1>Ekran główny</h1>
+                </div>
+              </div>
+              <div className="ibox-content">
+                <Link to="/nowa_seria_pomiarowa/RozpocznijSeriePomiarow">
+                  <button type="submit" className="btn btn-primary block full-width m-b">Rozpocznij nową serie pomiarową</button>
+                </Link>
+                <div className="serie_pomiarowe">
+                  <DataTable
+                    title="Serie pomiarowe"
+                    columns={columns}
+                    data={seriipomiarowych_dane}
+                    defaultSortFieldID={1}
+                    pagination
+                    paginationComponent={BootyPagination}
+                    selectableRows
+                    selectableRowsComponent={BootyCheckbox}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

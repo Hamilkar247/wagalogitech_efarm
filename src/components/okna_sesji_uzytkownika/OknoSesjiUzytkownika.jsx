@@ -55,10 +55,27 @@ function OknoSesjiUzytkownika() {
   const clickhandler = name => console.log("delete", name);
 
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <Table data={data} click={clickhandler} />
+    <div className="pace-done">
+      <div id="wrapper">
+        <div className="gray-bg">
+          <div className="row wrapper border-bottom white-bg page-heading">
+            <div className="ibox">
+              <div className="ibox-title">
+                <div id="col-lg-10">
+                  <h1>Sesje użytkownika MIEJSCE NA LOGIN UZYTKOWNIKA</h1>
+                </div>
+              </div>
+              <div className="ibox-content">
+                <div className="text-center wrapper wrapper-content animated fadeInRight">
+                  {/* <div className="col-lg-17 col-lg-14 col-lg-11 col-lg-8 col-lg-5"> */}
+                  <Table data={data} click={clickhandler} />
+                  {/* </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

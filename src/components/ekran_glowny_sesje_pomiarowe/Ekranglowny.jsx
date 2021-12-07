@@ -135,33 +135,42 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
 function Ekranglowny() {
     return (
       /* Ekranglowny.jsx - początek */
-      <div class="gray-bg">
-        <div className="EkranGlowny">
-          <div className="wrapper wrapper-content animated fadeInRight">
-            <div className="row align-items-center my-5">
-              <Link to="/rozpocznij_serie_pomiarowa">
-                <button type="submit" className="btn btn-primary block m-b">Nowa seria pomiarowa</button>
-              </Link>
-              <div className="col-lg-15 col-lg-13 col-lg-11 col-lg-7 col-lg-5 col-lg-3">
-                <DataTable
-                  title="Serie Pomiarowe"
-                  columns={columns}
-                  data={seriipomiarowych_dane}
-                  defaultSortFieldID={1}
-                  pagination
-                  paginationComponent={BootyPagination}
-                  selectableRows
-                  selectableRowsComponent={BootyCheckBox}
-              />
+      <div className="pace-done">
+        <div id="wrapper">
+          <div className="gray-bg">
+            <div className="row wrapper border-bottom white-bg page-heading">
+              <div className="ibox">
+                <div className="ibox-title">
+                  <div id="col-lg-10">
+                      <h1>Ekran główny</h1>
+                  </div>
+                </div>
+                <div className="ibox-content">
+                  <Link to="/rozpocznij_serie_pomiarowa">
+                    <button type="submit" className="btn btn-primary block m-b">Nowa seria pomiarowa</button>
+                  </Link>
+                  <div className="col-lg-15 col-lg-13 col-lg-11 col-lg-7 col-lg-5 col-lg-3">
+                    <DataTable
+                      title="Serie Pomiarowe"
+                      columns={columns}
+                      data={seriipomiarowych_dane}
+                      defaultSortFieldID={1}
+                      pagination
+                      paginationComponent={BootyPagination}
+                      selectableRows
+                      selectableRowsComponent={BootyCheckBox}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <script src="components/ekranglowny.css"></script>
-          <script src="components/inspinia/js/jquery-3.1.1.min.js"></script>
-          <script src="components/inspinia/js/popper.min.js"></script>
-          <script src="components/inspinia/js/bootstrap.js"></script>
-          <script src="components/inspinia/js/app.js" type="text/javascript"></script>
         </div>  
+        <script src="components/ekranglowny.css"></script>
+        <script src="components/inspinia/js/jquery-3.1.1.min.js"></script>
+        <script src="components/inspinia/js/popper.min.js"></script>
+        <script src="components/inspinia/js/bootstrap.js"></script>
+        <script src="components/inspinia/js/app.js" type="text/javascript"></script>
       </div>
     ) 
 }
