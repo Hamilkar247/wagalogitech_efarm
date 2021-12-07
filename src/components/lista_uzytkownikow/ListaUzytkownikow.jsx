@@ -147,7 +147,6 @@ function ListaUzytkownikow() {
                     <h2>Lista Użytkowników</h2>
                   </div>
                   <div className="wrapper wrapper-content animated fadeInRight">
-                    <div className="col-lg-17 col-lg-14 col-lg-11 col-lg-9 col-lg-7 col-lg-5">
                       <DataTable
                           title="Uzytkownicy"
                           columns={columns}
@@ -158,7 +157,6 @@ function ListaUzytkownikow() {
                           selectableRows
                           selectableRowsComponent={BootyCheckBox}
                       />
-                    </div>
                   </div>                  
                 </div>
               </div>

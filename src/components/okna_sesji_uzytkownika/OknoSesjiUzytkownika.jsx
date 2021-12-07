@@ -1,55 +1,44 @@
 import React, { useEffect, useState} from "react";
-import ReactDOM from "react-dom";
-import data from "../data.jsx";
-import Table from "../datatable_react_wagalogitech.jsx";
-
+import Table from "./datatable_react_wagalogitech.jsx";
+import dane_sesji_uzytkownika from "./dane_sesji_uzytkownika";
 import "./stylesFilterTable.css"
 
-const users = [
-  {
-    id: 1,
-    name: 'Hamilkar',
-    email: 'hamilkar@wiecznakartagina.qrt',
-    address: 'Kartagina 22-100'
+const list_of_columns = [
+   {
+     name: "czas trwania sesji",
+     selector: "czas_trwania_sesji",
+     sortable: true,
+     hide: "sm"
+   },
+   {
+     name: "czas rozpoczecia sesji",
+     selector: "czas_rozpoczecia_sesji",
+     sortable: true,
+     hide: "sm"
+   },
+   {
+    name: "czas zakończenia sesji",
+    selector: "czas_zakonczenia_sesji",
+    sortable: true,
+    hide: "sm"
   },
-  {
-    id: 2,
-    name: 'Hazdrubal',
-    email: 'hazdrubal@wiecznakartagina.qrt',
-    address: 'Kartagina 22-100'
-  },
-  {
-    id: 3,
-    name: 'Hannibal',
-    email: 'hannibal@wiecznakartagina.qrt',
-    address: 'Kartagina 22-100'
-  },
-  {
-    id: 4,
-    name: 'Hamilkar',
-    email: 'hamilkar@wiecznakartagina.qrt',
-    address: 'Kartagina 22-100'
-  }
+  // {
+  //   name: "Buttons",
+  //   button: true,
+  //   cell: row =>
+  //     row.showButtons ? (
+  //       <>
+  //         <button
+  //           onClick={() => click(row.name)}
+  //           style={{ marginRight: "5px" }}
+  //         >
+  //           Edit
+  //         </button>
+  //         <button onClick={() => props.click(row.name)}>Delete</button>
+  //       </>
+  //     ) : null
+  // }
 ]
-
-const columns = [
-  {
-    name: "Id",
-    selector: (row) => row.id,
-    sortable: true
-  },
-  {
-    name: "Imię",
-    selector: (row) => row.name,
-    sortable: true
-  },
-  {
-    name: "Email",
-    selector: (row) => row.email,
-    sortable: true
-  }
-]
-
 
 function OknoSesjiUzytkownika() {
   const clickhandler = name => console.log("delete", name);
@@ -68,7 +57,7 @@ function OknoSesjiUzytkownika() {
               <div className="ibox-content">
                 <div className="text-center wrapper wrapper-content animated fadeInRight">
                   {/* <div className="col-lg-17 col-lg-14 col-lg-11 col-lg-8 col-lg-5"> */}
-                  <Table data={data} click={clickhandler} />
+                  <Table columns={list_of_columns} data={dane_sesji_uzytkownika} click={clickhandler} />
                   {/* </div> */}
                 </div>
               </div>
