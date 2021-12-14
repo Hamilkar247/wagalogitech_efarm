@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from "react";
-import Table from "./datatable_react_wagalogitech.jsx";
+import Table from "../tabele/datatable_react_wagalogitech.jsx";
 import dane_sesji_uzytkownika from "./dane_sesji_uzytkownika";
 import "./stylesFilterTable.css"
 

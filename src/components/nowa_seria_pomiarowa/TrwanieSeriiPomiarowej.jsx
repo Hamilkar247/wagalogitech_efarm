@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
+import Table from "../tabele/datatable_react_wagalogitech.jsx";
 import { NavLink } from "react-router-dom";
 //import oknopomiar_dane from "./oknopomiar_dane";
 //import oknoseriipomiarowych_dane from "./oknoseriipomiarowych_dane";
@@ -19,7 +20,7 @@ function getNumberOfPages(rowCount, rowsPerPage) {
     return results;
   }
   
-  const columns = [
+  const list_of_columns = [
     {
       name: "Wartość",
       selector: (row) => row.wartosc,
@@ -200,7 +201,32 @@ const dane = [
     },
 ]
 
+function List_of_buttonsss() {
+    return (
+    <div id="przyciski">
+      {/* <Link> */}
+      <button type="button" class="btn btn-w-m btn-warning">Zakończ serie pomiarową</button>
+      {/* </Link> */}
+      {/* <Link> */}
+      <button type="button" class="btn btn-w-m btn-primary">Zatrzymaj serie pomiarową</button>
+      {/* </Link> */}
+      {/* <Link> */}
+      <button type="button" class="btn btn-w-m btn-danger">Dodaj pomiar ręcznie</button>
+      {/* </Link> */}
+      {/* <Link> */}
+      <button type="button" class="btn btn-w-m btn-success">Eksportuj pomiary</button>
+      {/* </Link> */}
+    </div>
+    );
+};
+
+//const Elementtt = <h1>Ahoj_test</h1>
+
 function TrwanieSeriiPomiarowej() {
+
+    const clickhandler = name => console.log("delete", name);
+    //const list_of_buttons=
+
     return (
       <div className="pace-done">
         <div id="wrapper">
@@ -248,20 +274,9 @@ function TrwanieSeriiPomiarowej() {
             <div className="wrapper wrapper-content animated fadeInRight">
               <div className="col-lg-11 col-lg-9 col-lg-7 col-lg-5">
                 <div> 
-                  {/* <Link> */}
-                    <button type="button" class="btn btn-w-m btn-warning">Zakończ serie pomiarową</button>
-                  {/* </Link> */}
-                  {/* <Link> */}
-                    <button type="button" class="btn btn-w-m btn-primary">Zatrzymaj serie pomiarową</button>
-                  {/* </Link> */}
-                  {/* <Link> */}
-                    <button type="button" class="btn btn-w-m btn-danger">Dodaj pomiar ręcznie</button>
-                  {/* </Link> */}
-                  {/* <Link> */}
-                    <button type="button" class="btn btn-w-m btn-success">Exportuj pomiary</button>
-                  {/* </Link> */}
-                  <DataTable
-                    title="Zmierzone wartości"
+                  <List_of_buttonsss />
+                  {/* <DataTable */}
+                  {/* //  title="Zmierzone wartości"
                     columns={columns}
                     data={dane}
                     defaultSortFieldID={1}
@@ -269,7 +284,8 @@ function TrwanieSeriiPomiarowej() {
                     paginationComponent={BootyPagination}
                     selectableRows
                     selectableRowsComponent={BootyCheckBox}
-                  />
+                  > */}
+                  <Table columns={list_of_columns} data={dane} click={clickhandler} />
                 </div>
               </div>  
             </div>
