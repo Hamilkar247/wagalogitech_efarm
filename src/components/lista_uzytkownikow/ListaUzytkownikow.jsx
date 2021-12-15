@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import listauzytkownikow_dane from "./listauzytkownikow_dane";
+import lista_uzytkownikow_dane from "../folder_danych/lista_uzytkownikow_dane";
 
 function getNumberOfPages(rowCount, rowsPerPage) {
     return Math.ceil(rowCount / rowsPerPage);
@@ -150,7 +150,7 @@ function ListaUzytkownikow() {
                       <DataTable
                           title="Uzytkownicy"
                           columns={columns}
-                          data={listauzytkownikow_dane}
+                          data={lista_uzytkownikow_dane}
                           defaultSortFieldId={1}
                           pagination
                           paginationComponent={BootyPagination}

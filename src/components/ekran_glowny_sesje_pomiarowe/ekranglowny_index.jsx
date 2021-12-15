@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import DataTable from "react-data-table-component";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-import seriipomiarowych_dane from "./seriipomiarowe_dane";
+import seriipomiarowych_dane from "../folder_danych/serie_pomiarowe_dane";
 
 function getNumberOfPages(rowCount, rowsPerPage) {
   return Math.ceil(rowCount / rowsPerPage);

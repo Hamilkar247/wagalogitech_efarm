@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import Table from "../tabele/datatable_react_wagalogitech.jsx";
+import trwajaca_sesja_dane from "../folder_danych/trwajaca_sesja_dane.jsx";
+import Table from "../komponenty_ui/datatable_react_wagalogitech.jsx";
 import { NavLink } from "react-router-dom";
 //import oknopomiar_dane from "./oknopomiar_dane";
 //import oknoseriipomiarowych_dane from "./oknoseriipomiarowych_dane";
@@ -128,80 +129,7 @@ const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
   </div>
 ));
 
-const dane = [
-    {
-        id: 1,
-        wartosc: "1",
-        etykieta: "qhoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 2,
-        wartosc: "231",
-        etykieta: "dhoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 3,
-        wartosc: "231",
-        etykieta: "ewq niech",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 4,
-        wartosc: "231",
-        etykieta: "ahoj2",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 5,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 6,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 7,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 8,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 9,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-    {
-        id: 10,
-        wartosc: "1",
-        etykieta: "ahoj",
-        data: "16:00 17.01.2021",
-        ważny: "poprawny"
-    },
-]
-
-function List_of_buttonsss() {
+function List_of_buttons() {
     return (
     <div id="przyciski">
       {/* <Link> */}
@@ -274,7 +202,7 @@ function TrwanieSeriiPomiarowej() {
             <div className="wrapper wrapper-content animated fadeInRight">
               <div className="col-lg-11 col-lg-9 col-lg-7 col-lg-5">
                 <div> 
-                  <List_of_buttonsss />
+                  <List_of_buttons />
                   {/* <DataTable */}
                   {/* //  title="Zmierzone wartości"
                     columns={columns}
@@ -285,7 +213,7 @@ function TrwanieSeriiPomiarowej() {
                     selectableRows
                     selectableRowsComponent={BootyCheckBox}
                   > */}
-                  <Table columns={list_of_columns} data={dane} click={clickhandler} />
+                  <Table columns={list_of_columns} data={trwajaca_sesja_dane} click={clickhandler} />
                 </div>
               </div>  
             </div>

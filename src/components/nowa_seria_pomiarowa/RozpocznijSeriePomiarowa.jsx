@@ -71,7 +71,7 @@ function RozpocznijSeriePomiarowa() {
                               <button class="btn btn-white btn-sm" type="submit">Anuluj</button>   
                             </Link>
                             <Link to="/trwanie_serii_pomiarowej">
-                              <button class="btn btn-primary btn-sm" type="submit">Zapisz serie i zacznij pomiary</button>
+                              <button class="btn btn-primary btn-sm" type="submit">Zapisz opis serii i zacznij pomiary</button>
                             </Link>
                           </div>
                         </div>

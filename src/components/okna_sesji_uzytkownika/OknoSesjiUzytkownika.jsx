@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from "react";
-import Table from "../tabele/datatable_react_wagalogitech.jsx";
-import dane_sesji_uzytkownika from "./dane_sesji_uzytkownika";
+import Table from "../komponenty_ui/datatable_react_wagalogitech.jsx";
+import dane_sesji_uzytkownika from "../folder_danych/dane_sesji_uzytkownika";
 import "./stylesFilterTable.css"
 
 const list_of_columns = [

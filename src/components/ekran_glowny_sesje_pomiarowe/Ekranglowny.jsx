@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
-import seriipomiarowych_dane from "./seriipomiarowe_dane";
+import seriipomiarowych_dane from "../folder_danych/serie_pomiarowe_dane";
 import { Link } from 'react-router-dom';
 //import "../bootstrap"
 //import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
