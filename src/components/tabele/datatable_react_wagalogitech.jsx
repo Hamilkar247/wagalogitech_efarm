@@ -27,25 +27,6 @@ const Table = props => {
       }
     ]
   )
-  // const columns = [
-  //   props.columns,
-  //   // {
-  //   //   name: "Buttons",
-  //   //   button: true,
-  //   //   cell: row =>
-  //   //     row.showButtons ? (
-  //   //       <>
-  //   //         <button
-  //   //           onClick={() => props.click(row.name)}
-  //   //           style={{ marginRight: "5px" }}
-  //   //         >
-  //   //           Edit
-  //   //         </button>
-  //   //         <button onClick={() => props.click(row.name)}>Delete</button>
-  //   //       </>
-  //   //     ) : null
-  //   // }
-  // ]
 
   const [filterText, setFilterText] = React.useState("");
   const [resetPaginationToggle, setResetPaginationToggle] = React.useState(
@@ -119,14 +100,13 @@ const Table = props => {
     link.click();
   }
 
-  const Export = ({ onExport }) => <button onClick ={e => onExport(e.target.value)}>Export</button>;
+  const Export = ({ onExport }) => <button type="button" class="btn btn-w-m btn-success" onClick ={e=> onExport(e.target.value)}>Eksportuj pomiary</button>
 
   //const ExportCSV = () => {
   const ExportCSV = React.useMemo(() => <Export onExport={() => downloadCSV(props.data)} />, []);
   //}
   //  = React.useMemo(() => <Export onExport={() => downloadCSV(data)} />, []);
  
-
   return (
     <DataTable
       title="Sesje Uzytkownika"

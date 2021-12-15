@@ -10,65 +10,65 @@ function getNumberOfPages(rowCount, rowsPerPage) {
     return Math.ceil(rowCount / rowsPerPage);
   }
   
-  function toPages(pages) {
-    const results = [];
-  
-    for (let i = 1; i < pages; i++) {
-      results.push(i);
-    }
-  
-    return results;
+function toPages(pages) {
+  const results = [];
+
+  for (let i = 1; i < pages; i++) {
+    results.push(i);
   }
+
+  return results;
+}
   
-  const list_of_columns = [
-    {
-      name: "Wartość",
-      selector: (row) => row.wartosc,
+const list_of_columns = [
+  {
+    name: "Wartość",
+    selector: (row) => row.wartosc,
+    sortable: true
+  },
+  {
+    name: "Etykieta",
+    selector: (row) => row.etykieta,
       sortable: true
-    },
-    {
-      name: "Etykieta",
-      selector: (row) => row.etykieta,
-      sortable: true
-    },
-    {
-      name: "Data",
-      selector: (row) => row.data,
-      sortable: true
-    },
-    {
-      name: "Ważny",
-      selector: (row) => row.wazny,
+  },
+  {
+    name: "Data",
+    selector: (row) => row.data,
+    sortable: true
+  },
+  {
+    name: "Ważny",
+    selector: (row) => row.wazny,
       sortable: true
     }
-  ];
-  
-  // RDT exposes the following internal pagination properties
-  const BootyPagination = ({
-    rowsPerPage,
-    rowCount,
-    onChangePage,
-    onChangeRowsPerPage, // available but not used here
-    currentPage
+];
+
+// RDT exposes the following internal pagination properties
+const BootyPagination = ({
+  rowsPerPage,
+  rowCount,
+  onChangePage,
+  onChangeRowsPerPage, // available but not used here
+  currentPage
   }) => {
-    const handleBackButtonClick = () => {
-      onChangePage(currentPage - 1);
-    };
-  
-    const handleNextButtonClick = () => {
-      onChangePage(currentPage + 1);
-    };
-  
-    const handlePageNumber = (e) => {
-      onChangePage(Number(e.target.value));
-    };
-  
-    const pages = getNumberOfPages(rowCount, rowsPerPage);
-    const pageItems = toPages(pages);
-    const nextDisabled = currentPage === pageItems.length;
-    const previosDisabled = currentPage === 1;
-  
-    return (
+  const handleBackButtonClick = () => {
+    onChangePage(currentPage - 1);
+  };
+
+  const handleNextButtonClick = () => {
+    onChangePage(currentPage + 1);
+  };
+
+  const handlePageNumber = (e) => {
+    onChangePage(Number(e.target.value));
+  };
+
+  const pages = getNumberOfPages(rowCount, rowsPerPage);
+  const pageItems = toPages(pages);
+  const nextDisabled = currentPage === pageItems.length;
+  const previosDisabled = currentPage === 1;
+
+  return (
       <nav>
         <ul className="pagination">
           <li className="page-item">
@@ -96,23 +96,23 @@ function getNumberOfPages(rowCount, rowsPerPage) {
                   {page}
                 </button>
               </li>
-            );
-          })}
-          <li className="page-item">
-            <button
-              className="page-link"
-              onClick={handleNextButtonClick}
-              disabled={nextDisabled}
-              aria-disabled={nextDisabled}
-              aria-label="next page"
-            >
-              Następny
-            </button>
-          </li>
-        </ul>
-      </nav>
-    );
-  };
+          );
+        })}
+        <li className="page-item">
+          <button
+            className="page-link"
+            onClick={handleNextButtonClick}
+            disabled={nextDisabled}
+            aria-disabled={nextDisabled}
+          aria-label="next page"
+          >
+            Następny
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 const BootyCheckBox = React.forwardRef(({ onClick, ...rest }, ref) => (
     <div className="form-check">
@@ -132,21 +132,21 @@ const dane = [
     {
         id: 1,
         wartosc: "1",
-        etykieta: "ahoj",
+        etykieta: "qhoj",
         data: "16:00 17.01.2021",
         ważny: "poprawny"
     },
     {
         id: 2,
         wartosc: "231",
-        etykieta: "ahoj2",
+        etykieta: "dhoj2",
         data: "16:00 17.01.2021",
         ważny: "poprawny"
     },
     {
         id: 3,
         wartosc: "231",
-        etykieta: "a niech",
+        etykieta: "ewq niech",
         data: "16:00 17.01.2021",
         ważny: "poprawny"
     },
