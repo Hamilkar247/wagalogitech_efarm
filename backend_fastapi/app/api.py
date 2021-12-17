@@ -95,3 +95,10 @@ uzytkownicy = [
 async def get_uzytkownicy() -> dict:
     return { "data": uzytkownicy }
 
+@app.post("/uzytkownicy", tags=["uzytkownicy"])
+async def add_uzytkownicy(uzytkownik: dict) -> dict:
+    uzytkownicy.append(uzytkownik)
+    return {
+      "data": { "Uzytkownik dodany." }
+    }
+
