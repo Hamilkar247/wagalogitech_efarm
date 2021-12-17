@@ -2,6 +2,9 @@ import React from "react";
 import ReactDom from "react-dom";
 import DataTable from "react-data-table-component";
 import lista_uzytkownikow_dane from "../folder_danych/lista_uzytkownikow_dane";
+import Uzytkownicy from "./UzytkownicyContext";
+
+
 
 function getNumberOfPages(rowCount, rowsPerPage) {
     return Math.ceil(rowCount / rowsPerPage);
@@ -157,6 +160,9 @@ function ListaUzytkownikow() {
                           selectableRows
                           selectableRowsComponent={BootyCheckBox}
                       />
+                      <Uzytkownicy>
+
+                      </Uzytkownicy>
                   </div>                  
                 </div>
               </div>

@@ -6,7 +6,8 @@ export default [
         login: "hami",
         haslo: "barkas",
         administrator: "true",
-        ostatnio_zalogowany: "01.01.1970"
+        ostatnio_zalogowany: "01.01.1970",
+        konto_aktywne: "true"
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export default [
         login: "hanni",
         haslo: "barkas",
         administrator: "true",
-        ostatnio_zalogowany: "01.01.1970"
+        ostatnio_zalogowany: "01.01.1970",
+        konto_aktywne: "true"
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ export default [
         login: "hanno",
         haslo: "barkas",
         administrator: "true",
-        ostatnio_zalogowany: "01.01.1970"
+        ostatnio_zalogowany: "01.01.1970",
+        konto_aktywne: "true"
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ export default [
         login: "magon",
         haslo: "barkas",
         administrator: "true",
-        ostatnio_zalogowany: "01.01.1970"
+        ostatnio_zalogowany: "01.01.1970",
+        konto_aktywne: "true"
     },
     {
         id: 5,
@@ -42,6 +46,7 @@ export default [
         login: "hazdru",
         haslo: "barkas",
         administrator: "true",
-        ostatnio_zalogowany: "01.01.1970"
+        ostatnio_zalogowany: "01.01.1970",
+        konto_aktywne: "true"
     },
 ];

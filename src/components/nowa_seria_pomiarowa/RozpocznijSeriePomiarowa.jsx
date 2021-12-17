@@ -57,32 +57,34 @@ function RozpocznijSeriePomiarowa() {
                      </div>
                      <div class="ibox-content">
                        <form method="get">
-                         
                          <div class="form-group  row"><label class="col-sm-2 col-form-label">Nazwa serii pomiarowej</label>
                            <div class="col-sm-10"><input type="text" class="form-control"/></div>
                          </div>
-                         <div class="form-group row"><label class="col-sm-2 col-form-label">Opis badanej substancji</label>
-                           <div class="col-sm-10"><input type="text" class="form-control"/> <span class="form-text m-b-none">Opis powinien zawierać dane na temat omawianego przedmiotu.</span>
+                         <div class="form-group row">
+                           <label class="col-sm-2 col-form-label">Opis badanej substancji</label>
+                           <div class="col-sm-10">
+                             <input type="text" class="form-control"/> 
+                             <span class="form-text m-b-none">Opis powinien zawierać dane na temat ważonego przedmiotu.</span>
                            </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-sm-4 col-sm-offset-2">
-                            <Link to="/">
-                              <button class="btn btn-white btn-sm" type="submit">Anuluj</button>   
-                            </Link>
-                            <Link to="/trwanie_serii_pomiarowej">
-                              <button class="btn btn-primary btn-sm" type="submit">Zapisz opis serii i zacznij pomiary</button>
-                            </Link>
-                          </div>
-                        </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                         </div>
+                         <div class="form-group row">
+                           <div class="col-sm-4 col-sm-offset-2">
+                             <Link to="/">
+                               <button class="btn btn-white btn-sm" type="submit">Anuluj</button>   
+                             </Link>
+                             <Link to="/trwanie_serii_pomiarowej">
+                                <button class="btn btn-primary btn-sm" type="submit">Zapisz opis serii i zacznij pomiary</button>
+                              </Link>
+                           </div>
+                         </div>
+                       </form>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
         {/*<!-- Mainly scripts -->*/}
         <script src="/components/inspinia/jquery-3.js"></script>
         <script src="/components/inspinia/popper.js"></script>

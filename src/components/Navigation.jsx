@@ -64,11 +64,16 @@ function Navigation() {
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/lista_uzytkownikow">
                     Lista użytkowników
-                  </NavLink> 
+                  </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_sesji_uzytkownika">
                     Okno sesji użytkownika
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/ahjo">
+                    ahjo
                   </NavLink>
                 </li>
               </ul>
