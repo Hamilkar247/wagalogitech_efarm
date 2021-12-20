@@ -9,10 +9,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
-   <meta
+   <!-- TO PONIZEJ POWODUJE WALNIETE BLEDY CSP !-->
+   <!-- <meta       
      http-equiv="Content-Security-Policy"
      content="script-src 'self' 'unsafe-inline';"
-   />
+   /> -->
+   <meta http-equiv="Content-Security-Policy" default-src 'self';style-src 'self' cdn.syncfusion.com fonts.googleapis.com 'unsafe-inline';font-src 'self' data: cdn.syncfusion.com fonts.googleapis.com fonts.gstatic.com ;frame-src www.google.com;img-src 'self' data: https:;object-src 'none'; script-src 'self' cdn.polyfill.io www.gstatic.com www.google.com ajax.googleapis.com fonts.googleapis.com;frame-ancestors 'none';>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
