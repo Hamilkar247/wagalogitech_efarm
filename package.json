@@ -7,9 +7,20 @@
   "homepage": "./",
   "main": "./public/electron.js",
   "dependencies": {
+    "@syncfusion/ej2-react-buttons": "^19.4.38",
+    "@syncfusion/ej2-react-dropdowns": "^19.4.38",
+    "@syncfusion/ej2-react-filemanager": "^19.4.38",
+    "@syncfusion/ej2-react-grids": "^19.4.38",
+    "@syncfusion/ej2-react-inputs": "^19.4.38",
+    "@syncfusion/ej2-react-layouts": "^19.4.38",
+    "@syncfusion/ej2-react-navigations": "^19.4.38",
+    "@syncfusion/ej2-react-popups": "^19.4.38",
+    "@syncfusion/ej2-react-spreadsheet": "^19.4.38",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "components": "^0.1.0",
+    "material-icons-react": "^1.0.4",
     "react": "^17.0.2",
     "react-data-table-component": "^7.4.5",
     "react-dom": "^17.0.2",
@@ -63,11 +74,16 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^17.0.1",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
     "concurrently": "^6.3.0",
     "cross-env": "^7.0.3",
     "electron": "^15.3.1",
     "electron-builder": "^22.13.1",
     "electronmon": "^2.0.2",
+    "typescript": "^4.5.4",
     "wait-on": "^6.0.0"
   }
 }

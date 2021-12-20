@@ -4,8 +4,7 @@ import DataTable from "react-data-table-component";
 import trwajaca_sesja_dane from "../folder_danych/trwajaca_sesja_dane.jsx";
 import Table from "../komponenty_ui/datatable_react_wagalogitech.jsx";
 import { NavLink } from "react-router-dom";
-//import oknopomiar_dane from "./oknopomiar_dane";
-//import oknoseriipomiarowych_dane from "./oknoseriipomiarowych_dane";
+import ArkuszDanychComponent from "../arkusz_danych/ArkuszDanychComponent.jsx";
 
 function getNumberOfPages(rowCount, rowsPerPage) {
     return Math.ceil(rowCount / rowsPerPage);
@@ -158,6 +157,9 @@ function TrwanieSeriiPomiarowej() {
     return (
       <div className="pace-done">
         <div id="wrapper">
+          <div className="ahoj">
+            <ArkuszDanychComponent></ArkuszDanychComponent>
+          </div>
           <div className="gray-bg">
             <div className="row wrapper border-bottom white-bg page-heading">     
               <div className="col-lg-10">

@@ -23,6 +23,8 @@ import {
   OknoSeriiPomiarow,
   OknoSesjiUzytkownika,
   ListaUzytkownikow,
+  // ArkuszDanychComponent,
+  PrzykladowyArkuszDanych,
 } from "./components";
 
 //ReactDOM.render(
@@ -46,6 +48,7 @@ ReactDOM.render(
       <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
       <Route path="/okno_sesji_uzytkownika" element={<OknoSesjiUzytkownika />} />
       <Route path="/lista_uzytkownikow" element={<ListaUzytkownikow />} />
+      <Route path="/przykladowy_arkusz_danych" element={<PrzykladowyArkuszDanych />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/pusta_strona" element={<Pusta_Strona />} />

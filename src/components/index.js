@@ -20,5 +20,7 @@ export { default as TrwanieSeriiPomiarowej} from "./nowa_seria_pomiarowa/Trwanie
 export { default as OknoPomiaru} from "./OknoPomiaru";
 export { default as OknoSeriiPomiarow} from "./OknoSeriiPomiarow";
 export { default as ListaUzytkownikow} from "./lista_uzytkownikow/ListaUzytkownikow";
- 
+export { default as Uzytkownicy} from "./lista_uzytkownikow/UzytkownicyContext";
 export { default as OknoSesjiUzytkownika} from "./okna_sesji_uzytkownika/OknoSesjiUzytkownika";
+// export { default as ArkuszDanychComponent} from "./arkusz_danych/ArkuszDanychComponent";
+export { default as PrzykladowyArkuszDanych} from "./arkusz_danych/PrzykladowyArkuszDanych";

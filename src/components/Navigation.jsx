@@ -72,8 +72,8 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/ahjo">
-                    ahjo
+                  <NavLink className="nav-link" to="/przykladowy_arkusz_danych">
+                    Przykładowy arkusz danych
                   </NavLink>
                 </li>
               </ul>
