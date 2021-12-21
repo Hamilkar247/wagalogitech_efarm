@@ -12,12 +12,12 @@ function Login() {
             <h3>Witaj w Wagalogitech</h3>
               <p>Zaloguj się</p>
               <form className="m-t" role="form" action="xyz.html">
-                <div className ="form-group">
+                {/* <div className ="form-group">
                   <input type="email" className="form-control" placeholder="Username" required=""/>
                 </div>
                 <div className="form-group">
                   <input type="password" className="form-control" placeholder="Password" required=""/>
-                </div>
+                </div> */}
                 <Link to="/ekran_glowny">
                 <button type="submit" className="btn btn-primary block full-width m-b">Login</button>
                 </Link>

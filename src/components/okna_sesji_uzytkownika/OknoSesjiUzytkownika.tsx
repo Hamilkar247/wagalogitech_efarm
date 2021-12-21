@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from "react";
-import Table from "../komponenty_ui/datatable_react_wagalogitech.jsx";
+import Table from "../komponenty_ui/datatable_react_wagalogitech";
 import dane_sesji_uzytkownika from "../folder_danych/dane_sesji_uzytkownika";
 import "./stylesFilterTable.css"
 
@@ -41,12 +41,12 @@ const list_of_columns = [
 ]
 
 function OknoSesjiUzytkownika() {
-  const clickhandler = name => console.log("delete", name);
+  // const clickhandler = name => console.log("delete", name);
 
   return (
     <div className="pace-done">
       <div id="wrapper">
-        <div className="gray-bg">
+        {/* <div className="gray-bg">
           <div className="row wrapper border-bottom white-bg page-heading">
             <div className="ibox">
               <div className="ibox-title">
@@ -56,14 +56,15 @@ function OknoSesjiUzytkownika() {
               </div>
               <div className="ibox-content">
                 <div className="text-center wrapper wrapper-content animated fadeInRight">
-                  {/* <div className="col-lg-17 col-lg-14 col-lg-11 col-lg-8 col-lg-5"> */}
+                  <div className="col-lg-17 col-lg-14 col-lg-11 col-lg-8 col-lg-5"> 
                   <Table columns={list_of_columns} data={dane_sesji_uzytkownika} click={clickhandler} />
-                  {/* </div> */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+        */}
       </div>
     </div>
   );

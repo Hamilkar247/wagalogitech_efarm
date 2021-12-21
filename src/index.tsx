@@ -35,33 +35,33 @@ import {
 //);
 
 ReactDOM.render(
-  // <Router>
-  //   <Navigation />
-  //   <Routes>
-  //     <Route path="/login" element={<Login />} />
-  //     <Route path="/rejestruj" element={<Rejestruj />} />
-  //     <Route path="/ekranglowny" element={<Ekranglowny />} />
-  //     <Route path="/" element={<Home />} />
-  //     <Route path="/rozpocznij_serie_pomiarowa" element={<RozpocznijSeriePomiarowa />} />
-  //     <Route path="/trwanie_serii_pomiarowej" element={<TrwanieSeriiPomiarowej />} />
-  //     <Route path="/okno_pomiaru" element={<OknoPomiaru />} />
-  //     <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
-  //     <Route path="/okno_sesji_uzytkownika" element={<OknoSesjiUzytkownika />} />
-  //     <Route path="/lista_uzytkownikow" element={<ListaUzytkownikow />} />
-  //     <Route path="/przykladowy_arkusz_danych" element={<PrzykladowyArkuszDanych />} />
-  //     <Route path="/about" element={<About />} />
-  //     <Route path="/contact" element={<Contact />} />
-  //     <Route path="/pusta_strona" element={<Pusta_Strona />} />
-  //     <Route path="/blog" element={<Blog />}>
-  //       <Route path="" element={<Posts />} />
-  //       <Route path=":postSlug" element={<Post />} />
-  //     </Route>
-  //   </Routes>
-  //   <Footer />
-  // </Router>,
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Navigation />
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/rejestruj" element={<Rejestruj />} />
+      <Route path="/ekranglowny" element={<Ekranglowny />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/rozpocznij_serie_pomiarowa" element={<RozpocznijSeriePomiarowa />} />
+      <Route path="/trwanie_serii_pomiarowej" element={<TrwanieSeriiPomiarowej />} />
+      <Route path="/okno_pomiaru" element={<OknoPomiaru />} />
+      <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
+      <Route path="/okno_sesji_uzytkownika" element={<OknoSesjiUzytkownika />} />
+      <Route path="/lista_uzytkownikow" element={<ListaUzytkownikow />} />
+      <Route path="/przykladowy_arkusz_danych" element={<PrzykladowyArkuszDanych />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/pusta_strona" element={<Pusta_Strona />} />
+      <Route path="/blog" element={<Blog />}>
+        <Route path="" element={<Posts />} />
+        <Route path=":postSlug" element={<Post />} />
+      </Route>
+    </Routes>
+    <Footer />
+  </Router>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
   document.getElementById("root")
 );
 

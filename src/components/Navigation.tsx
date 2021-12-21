@@ -11,7 +11,7 @@ function Navigation() {
             </NavLink>
             <div>
               <ul className="navbar-nav m1-auto">
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/login">
                     Login
                   </NavLink>
@@ -25,7 +25,7 @@ function Navigation() {
                   <NavLink className="nav-link" to="/ekranglowny">
                     Ekran główny
                   </NavLink>
-                </li>
+                </li> */}
                 {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/about">
                     About
@@ -46,7 +46,7 @@ function Navigation() {
                     Okno serii pomiarów
                   </NavLink>
                 </li>  */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
                     Rozpocznij serie pomiarowa
                   </NavLink>
@@ -55,7 +55,7 @@ function Navigation() {
                   <NavLink className="nav-link" to="/trwanie_serii_pomiarowej">
                     Trwanie serii pomiarowej
                   </NavLink>
-                </li>
+                </li> */}
                 {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru

@@ -4,10 +4,10 @@ import * as React from 'react';
 
 function ArkuszDanychComponent() {
     return (
-        <>
+        <div id="App">
         Ahjo
           {/* <SpreadsheetComponent/> */}
-        </>
+        </div>
     )
 }
 
