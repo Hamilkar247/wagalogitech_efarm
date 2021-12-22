@@ -16,17 +16,11 @@ function Navigation() {
                     Login
                   </NavLink>
                 </li>
-                {/*
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/rejestruj">
-                    Rejestruj
-                  </NavLink>
-                </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/ekranglowny">
                     Ekran główny
                   </NavLink>
-                </li> */}
+                </li>
                 {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/about">
                     About

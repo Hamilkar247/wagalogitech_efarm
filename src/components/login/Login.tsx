@@ -21,7 +21,7 @@ function Login() {
                   <input type="password" className="form-control" placeholder="Password" />
                 </div>
                 <Link to="/ekran_glowny">
-                <button type="submit" className="btn btn-primary block full-width m-b">Login</button>
+                  <button type="submit" className="btn btn-primary block full-width m-b">Login</button>
                 </Link>
                 <a href="#"><small>Zapomniałeś hasła?</small></a>
                 <p className="text-muted text-center"><small>Nie masz konta??</small></p>
