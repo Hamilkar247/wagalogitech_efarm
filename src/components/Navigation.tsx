@@ -51,11 +51,11 @@ function Navigation() {
                     Trwanie serii pomiarowej
                   </NavLink>
                 </li> */}
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru
                   </NavLink>
-                </li>  */}
+                </li> 
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/lista_uzytkownikow">
                     Lista użytkowników

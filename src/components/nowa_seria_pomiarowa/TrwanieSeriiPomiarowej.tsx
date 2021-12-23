@@ -5,7 +5,7 @@ import trwajaca_sesja_dane from "../folder_danych/trwajaca_sesja_dane";
 import Table from "../komponenty_ui/datatable_react_wagalogitech";
 import { NavLink } from "react-router-dom";
 import ArkuszDanychComponent from "../arkusz_danych/ArkuszDanychComponent";
-
+import { SpreadsheetComponent } from '@syncfusion/ej2-react-spreadsheet';
 // function getNumberOfPages(rowCount, rowsPerPage) {
 //     return Math.ceil(rowCount / rowsPerPage);
 //   }
@@ -157,9 +157,6 @@ function TrwanieSeriiPomiarowej() {
     return (
       <div className="pace-done">
         <div id="wrapper">
-          <div className="ahoj">
-            <ArkuszDanychComponent></ArkuszDanychComponent>
-          </div>
           <div className="gray-bg">
             <div className="row wrapper border-bottom white-bg page-heading">     
               <div className="col-lg-10">
@@ -219,6 +216,11 @@ function TrwanieSeriiPomiarowej() {
                 </div>
               </div>  
             </div>
+            <div className="App">
+              <SpreadsheetComponent>
+              </SpreadsheetComponent>
+            </div>
+        </div>
         </div>
         <script src="components/ekranglowny.css"></script>
               {/*<!-- Mainly scripts -->*/}
@@ -232,7 +234,7 @@ function TrwanieSeriiPomiarowej() {
               <script src="/components/inspinia/pace.js"></script>
               <script src="/components/inspinia/icheck.js"></script>
       </div>
-      </div>
+      // </div>
     )
 }
 

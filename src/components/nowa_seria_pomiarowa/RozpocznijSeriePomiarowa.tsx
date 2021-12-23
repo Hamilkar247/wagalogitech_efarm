@@ -6,7 +6,7 @@ function RozpocznijSeriePomiarowa() {
     return (
       <div className="pace-done">
         <div id="wrapper">
-          {/* <div className="gray-bg">
+          <div className="gray-bg">
             <div className="row wrapper border-bottom white-bg page-heading">
               <div className="col-lg-10">
                 <h2>Rozpocznij seria pomiarowa</h2>
@@ -83,7 +83,7 @@ function RozpocznijSeriePomiarowa() {
                  </div>
                </div>
              </div>
-           </div> */}
+           </div>
          </div>
         {/*<!-- Mainly scripts -->*/}
         <script src="/components/inspinia/jquery-3.js"></script>
