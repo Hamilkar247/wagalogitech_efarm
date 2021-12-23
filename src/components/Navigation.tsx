@@ -46,11 +46,12 @@ function Navigation() {
                     Rozpocznij serie pomiarowa
                   </NavLink>
                 </li>
+                */}
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/trwanie_serii_pomiarowej">
                     Trwanie serii pomiarowej
                   </NavLink>
-                </li> */}
+                </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru

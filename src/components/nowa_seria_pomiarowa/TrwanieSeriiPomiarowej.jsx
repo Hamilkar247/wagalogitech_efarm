@@ -1,11 +1,26 @@
 import React from "react";
 import ReactDom from "react-dom";
-import DataTable from "react-data-table-component";
+import DataTable, { TableColumn } from 'react-data-table-component';
 import trwajaca_sesja_dane from "../folder_danych/trwajaca_sesja_dane";
 import Table from "../komponenty_ui/datatable_react_wagalogitech";
 import { NavLink } from "react-router-dom";
 import ArkuszDanychComponent from "../arkusz_danych/ArkuszDanychComponent";
-import { SpreadsheetComponent } from '@syncfusion/ej2-react-spreadsheet';
+import { 
+SpreadsheetComponent, 
+SheetsDirective, 
+SheetDirective, 
+ColumnsDirective,
+RangeDirective, 
+RangesDirective, 
+RowsDirective, 
+RowDirective, 
+CellsDirective, 
+CellDirective, 
+ColumnDirective 
+} 
+from 
+'@syncfusion/ej2-react-spreadsheet'; 
+
 // function getNumberOfPages(rowCount, rowsPerPage) {
 //     return Math.ceil(rowCount / rowsPerPage);
 //   }
@@ -147,9 +162,24 @@ function List_of_buttons() {
     );
 };
 
+
 //const Elementtt = <h1>Ahoj_test</h1>
 
 function TrwanieSeriiPomiarowej() {
+    // public spreadsheet: SpreadsheetComponent;
+    // public definedNames: DefineNameModel[] = [{
+    //     name: 'Profit', refersTo: '=F2:F11'
+    // },
+    // {
+    //     name: 'High', refersTo: '=D2:D11'
+    // }]
+
+
+    // public onCreated(): void {
+    //     this.spreadsheet.cellFormat({ fontWeight: 'bold', backgroundColor: '#279377', color: '#fff', textAlign: 'center', verticalAlign: 'middle', fontSize: '14px' }, 'A1:F1');
+    //     this.spreadsheet.cellFormat({ fontWeight: 'bold', backgroundColor: '#EEEEEE' }, 'A12:F15');
+    //     this.spreadsheet.numberFormat('0.00', 'F2:F11');
+    // }
 
     // const clickhandler = name => console.log("delete", name);
     //const list_of_buttons=
@@ -200,24 +230,11 @@ function TrwanieSeriiPomiarowej() {
             </div>            
             <div className="wrapper wrapper-content animated fadeInRight">
               <div className="col-lg-11 col-lg-9 col-lg-7 col-lg-5">
-                <div> 
-                  <List_of_buttons />
-                  {/* <DataTable */}
-                  {/* //  title="Zmierzone wartości"
-                    columns={columns}
-                    data={dane}
-                    defaultSortFieldID={1}
-                    pagination
-                    paginationComponent={BootyPagination}
-                    selectableRows
-                    selectableRowsComponent={BootyCheckBox}
-                  > */}
-                  {/* <Table columns={list_of_columns} data={trwajaca_sesja_dane} click={clickhandler} /> */}
-                </div>
               </div>  
             </div>
             <div className="App">
-              <SpreadsheetComponent>
+              <SpreadsheetComponent ref={(ssObj) => { this.spreadsheet = ssObj; }}>
+
               </SpreadsheetComponent>
             </div>
         </div>
