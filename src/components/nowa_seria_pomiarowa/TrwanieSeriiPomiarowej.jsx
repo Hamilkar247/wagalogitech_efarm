@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDom from "react-dom";
 import DataTable, { TableColumn } from 'react-data-table-component';
 import trwajaca_sesja_dane from "../folder_danych/trwajaca_sesja_dane";
@@ -20,6 +20,7 @@ ColumnDirective
 } 
 from 
 '@syncfusion/ej2-react-spreadsheet'; 
+import { freezePaneData } from "./data";
 
 // function getNumberOfPages(rowCount, rowsPerPage) {
 //     return Math.ceil(rowCount / rowsPerPage);
@@ -166,24 +167,15 @@ function List_of_buttons() {
 //const Elementtt = <h1>Ahoj_test</h1>
 
 function TrwanieSeriiPomiarowej() {
-    // public spreadsheet: SpreadsheetComponent;
-    // public definedNames: DefineNameModel[] = [{
-    //     name: 'Profit', refersTo: '=F2:F11'
-    // },
-    // {
-    //     name: 'High', refersTo: '=D2:D11'
-    // }]
-
-
-    // public onCreated(): void {
-    //     this.spreadsheet.cellFormat({ fontWeight: 'bold', backgroundColor: '#279377', color: '#fff', textAlign: 'center', verticalAlign: 'middle', fontSize: '14px' }, 'A1:F1');
-    //     this.spreadsheet.cellFormat({ fontWeight: 'bold', backgroundColor: '#EEEEEE' }, 'A12:F15');
-    //     this.spreadsheet.numberFormat('0.00', 'F2:F11');
-    // }
-
-    // const clickhandler = name => console.log("delete", name);
-    //const list_of_buttons=
-
+    const [freezeRowCount, setCount] = useState(1);
+    const cellStyle = {
+      fontSize: "12pt",
+      fontWeight: "bold",
+      textAlign: "center",
+      verticalAlign: "middle"
+    };
+    
+    const bold = { fontWeight: "bold"};
     return (
       <div className="pace-done">
         <div id="wrapper">
@@ -233,8 +225,70 @@ function TrwanieSeriiPomiarowej() {
               </div>  
             </div>
             <div className="App">
-              <SpreadsheetComponent ref={(ssObj) => { this.spreadsheet = ssObj; }}>
+              {/* <SpreadsheetComponent ref={(ssObj) => { this.spreadsheet = ssObj; }}>
 
+              </SpreadsheetComponent> */}
+              <SpreadsheetComponent
+                openUrl="https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/open"
+                saveUrl="https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save"  
+              >
+                <SheetsDirective>
+                  <SheetDirective
+                    name="Gross Salary"
+                    frozenRows={freezeRowCount}
+                    frozenColumns={2}
+                    selectedRange="C1"
+                  >
+                    <RangesDirective>
+                      <RangeDirective dataSource={freezePaneData} startCell="A2" />              
+                    </RangesDirective>
+                    <RowsDirective>
+                      <RowDirective>
+                        <CellsDirective>
+                          <CellDirective
+                            index={1}
+                            value="Period"
+                            style={cellStyle}
+                          />
+                          <CellDirective
+                          index={3}
+                          value="Total Gross Salary"
+                          style={cellStyle}
+                          />
+                        </CellsDirective>
+                      </RowDirective>
+                      <RowDirective index={26}>
+                        <CellsDirective>
+                          <CellDirective
+                            index={13}
+                            value="Total Amount:"
+                            style={bold}
+                          />
+                          <CellDirective formular="=SUM(04:026)" style={cellStyle} />
+                          <CellDirective formular="=SUM(P4:P26)" style={cellStyle} />
+                        </CellsDirective>
+                      </RowDirective>
+                    </RowsDirective>
+                    <ColumnsDirective>
+                      <ColumnDirective width={80} />
+                      <ColumnDirective width={80} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={80} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                      <ColumnDirective width={100} />
+                    </ColumnsDirective>
+                  </SheetDirective>
+                </SheetsDirective>
               </SpreadsheetComponent>
             </div>
         </div>
