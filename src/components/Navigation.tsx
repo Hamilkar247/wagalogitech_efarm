@@ -17,11 +17,6 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/rejestruj">
-                    Rejestruj
-                  </NavLink>
-                </li>
-                <li className="nav-item">
                   <NavLink className="nav-link" to="/ekranglowny">
                     Ekran główny
                   </NavLink>
@@ -46,21 +41,22 @@ function Navigation() {
                     Okno serii pomiarów
                   </NavLink>
                 </li>  */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink className="nav-link" to="/rozpocznij_serie_pomiarowa">
                     Rozpocznij serie pomiarowa
                   </NavLink>
                 </li>
+                */}
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/trwanie_serii_pomiarowej">
                     Trwanie serii pomiarowej
                   </NavLink>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <NavLink className="nav-link" to="/okno_pomiaru">
                     Okno pomiaru
                   </NavLink>
-                </li>  */}
+                </li> 
                 <li className="nav-item>">
                   <NavLink className="nav-link" to="/lista_uzytkownikow">
                     Lista użytkowników
@@ -72,8 +68,8 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/ahjo">
-                    ahjo
+                  <NavLink className="nav-link" to="/przykladowy_arkusz_danych">
+                    Przykładowy arkusz danych
                   </NavLink>
                 </li>
               </ul>

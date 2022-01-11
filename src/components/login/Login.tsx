@@ -13,13 +13,15 @@ function Login() {
               <p>Zaloguj się</p>
               <form className="m-t" role="form" action="xyz.html">
                 <div className ="form-group">
-                  <input type="email" className="form-control" placeholder="Username" required=""/>
+                  <input type="email" className="form-control" placeholder="Username" />
+                  {/* <input type="email" className="form-control" placeholder="Username" required=""/> */}
                 </div>
                 <div className="form-group">
-                  <input type="password" className="form-control" placeholder="Password" required=""/>
+                  {/* <input type="password" className="form-control" placeholder="Password" required="" /> */}
+                  <input type="password" className="form-control" placeholder="Password" />
                 </div>
                 <Link to="/ekran_glowny">
-                <button type="submit" className="btn btn-primary block full-width m-b">Login</button>
+                  <button type="submit" className="btn btn-primary block full-width m-b">Login</button>
                 </Link>
                 <a href="#"><small>Zapomniałeś hasła?</small></a>
                 <p className="text-muted text-center"><small>Nie masz konta??</small></p>

@@ -12,7 +12,6 @@ export { default as Blog} from "./blog/Blog";
 export { default as Posts} from "./blog/Posts";
 export { default as Post} from "./blog/Post";
 export { default as Login} from "./login/Login";
-export { default as Rejestruj} from "./rejestruj/Rejestruj";
 export { default as Ekranglowny} from "./ekran_glowny_sesje_pomiarowe/Ekranglowny";
 export { default as Pusta_Strona} from "./Pusta_Strona";
 export { default as RozpocznijSeriePomiarowa} from "./nowa_seria_pomiarowa/RozpocznijSeriePomiarowa";
@@ -20,5 +19,7 @@ export { default as TrwanieSeriiPomiarowej} from "./nowa_seria_pomiarowa/Trwanie
 export { default as OknoPomiaru} from "./OknoPomiaru";
 export { default as OknoSeriiPomiarow} from "./OknoSeriiPomiarow";
 export { default as ListaUzytkownikow} from "./lista_uzytkownikow/ListaUzytkownikow";
- 
+export { default as Uzytkownicy} from "./lista_uzytkownikow/UzytkownicyContext";
 export { default as OknoSesjiUzytkownika} from "./okna_sesji_uzytkownika/OknoSesjiUzytkownika";
+// export { default as ArkuszDanychComponent} from "./arkusz_danych/ArkuszDanychComponent";
+export { default as PrzykladowyArkuszDanych} from "./arkusz_danych/PrzykladowyArkuszDanych";

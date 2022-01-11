@@ -15,13 +15,15 @@ export default function Uzytkownicy() {
     fetchUzytkownicy()
   }, [])
   return (
-    <UzytkownicyContext.Provider value={{uzytkownicy, fetchUzytkownicy}}>
+    <>
+    </>
+    // <UzytkownicyContext.Provider value={{uzytkownicy, fetchUzytkownicy}}>
       
-        {
-          uzytkownicy.map((uzytkownik) => (
-            <b>{uzytkownik.imie} id={uzytkownik.id} </b>
-          ))
-        }
-    </UzytkownicyContext.Provider>  
+    //     {
+    //       uzytkownicy.map((uzytkownik) => (
+    //         <b>{uzytkownik.imie} id={uzytkownik.id} </b>
+    //       ))
+    //     }
+    // </UzytkownicyContext.Provider>  
   )
 }

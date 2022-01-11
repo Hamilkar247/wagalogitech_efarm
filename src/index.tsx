@@ -14,7 +14,6 @@ import {
   Posts,
   Post,
   Login,
-  Rejestruj,
   Ekranglowny,
   Pusta_Strona,
   RozpocznijSeriePomiarowa,
@@ -23,6 +22,8 @@ import {
   OknoSeriiPomiarow,
   OknoSesjiUzytkownika,
   ListaUzytkownikow,
+  // ArkuszDanychComponent,
+  PrzykladowyArkuszDanych,
 } from "./components";
 
 //ReactDOM.render(
@@ -37,7 +38,6 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/rejestruj" element={<Rejestruj />} />
       <Route path="/ekranglowny" element={<Ekranglowny />} />
       <Route path="/" element={<Home />} />
       <Route path="/rozpocznij_serie_pomiarowa" element={<RozpocznijSeriePomiarowa />} />
@@ -46,6 +46,7 @@ ReactDOM.render(
       <Route path="/okno_serii_pomiarow" element={<OknoSeriiPomiarow />} />
       <Route path="/okno_sesji_uzytkownika" element={<OknoSesjiUzytkownika />} />
       <Route path="/lista_uzytkownikow" element={<ListaUzytkownikow />} />
+      <Route path="/przykladowy_arkusz_danych" element={<PrzykladowyArkuszDanych />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/pusta_strona" element={<Pusta_Strona />} />
@@ -56,7 +57,9 @@ ReactDOM.render(
     </Routes>
     <Footer />
   </Router>,
-
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
   document.getElementById("root")
 );
 
