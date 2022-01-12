@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr, Field
 
 
-class SeriaPomiarowa(BaseModel):
+class SeriaPomiarowaSchema(BaseModel):
     nazwa: str = Field(...)
 
     class Config:
@@ -15,6 +15,29 @@ class SeriaPomiarowa(BaseModel):
 
     class Meta:
         verbose_name = "Seria Pomiarowa"
+
+
+class UpdateSeriaPomiarowaSchema(BaseModel):
+    nazwa: str = Field(...)
+
+    class Config: 
+        schema_extra = {
+          "example" : {
+              "nazwa" : "seria_nazwa",
+          }
+        }
+
+
+def ResponseSchema(data, message):
+    return {
+        "data": [data],
+        "code": 200,
+        "message": message,
+    }
+
+
+def ErrorResponseSchema(error, code, message):
+    return {"error": error, "code": code, "message": message}
 
 
 # class Pomiar
