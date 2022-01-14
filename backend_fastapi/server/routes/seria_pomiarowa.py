@@ -30,7 +30,7 @@ async def add_seria_pomiarowa_data(seria_pomiarowa: SeriaPomiarowaSchema = Body(
 
 @router.get("/", response_description="Seria pomiarowa retrieved")
 async def get_zbior_serii_pomiarowych():
-    zbior_serii_pomiarowych = await retrieve_seria_pomiarowa()
+    zbior_serii_pomiarowych = await retrieve_zbior_serii_pomiarowych()
     if zbior_serii_pomiarowych:
         return ResponseSchema(zbior_serii_pomiarowych, "Seria pomiarowa data retrieved successfully")
     return ResponseSchema(zbior_serii_pomiarowych, "Empty list returned")
